@@ -1,0 +1,23 @@
+{
+  "name": "adapt-accordionWithAudio",
+  "version": "0.0.1",
+  "description": "An accordion component that displays clickable titles, which reveal display text ande play audio.",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CrediPointSolutions/adapt-accordionWithAudio.git"
+  },
+  "author": "CrediPointSolutions",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/CrediPointSolutions/adapt-accordionWithAudio/issues"
+  },
+  "devDependencies": {
+    "karma": "~0.9",
+    "karma-mocha": "*",
+    "karma-expect": "*"
+  }
+}

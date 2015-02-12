@@ -1,0 +1,23 @@
+{
+  "name": "adapt-targetPage",
+  "version": "1.0",
+  "description": "A component to target another page/article/id",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "injixo",
+  "license": "GPL v3",
+  "bugs": {
+    "url": ""
+  },
+  "devDependencies": {
+    "karma": "~0.10",
+    "karma-mocha": "*",
+    "karma-expect": "*"
+  }
+}

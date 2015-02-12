@@ -1,0 +1,23 @@
+{
+  "name": "adapt-menu-singlePageCourse",
+  "version": "0.0.1",
+  "description": "Enables the use of a single page course without a menu",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adaptlearning/adapt-menu-singlePageCourse.git"
+  },
+  "author": "Adam Laird",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/adamlaird/adapt-menu-singlePageCourse/issues"
+  },
+  "devDependencies": {
+    "karma": "~0.9",
+    "karma-mocha": "*",
+    "karma-expect": "*"
+  }
+}

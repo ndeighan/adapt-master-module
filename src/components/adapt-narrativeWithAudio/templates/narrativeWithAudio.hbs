@@ -1,0 +1,116 @@
+{{! Maintainers - Himanshu Rajotia <himanshu.rajotia@credipoint.com>, CrediPoint Solutions <git@credipoint.com>}}
+<div class="narrativeWithAudio-inner component-inner">
+    {{#if title}}
+    <div class="narrativeWithAudio-title component-title">
+        <h4 class="narrativeWithAudio-title-inner component-title-inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="narrativeWithAudio-body component-body">
+        <div class="narrativeWithAudio-body-inner component-body-inner">
+            {{{body}}}
+        </div>
+    </div>
+    {{/if}}
+    <div class="narrativeWithAudio-widget component-widget">
+        
+        <div class="narrativeWithAudio-strapline">
+            <div class="narrativeWithAudio-strapline-header">
+                <div class="narrativeWithAudio-strapline-header-inner clearfix">
+                    {{#each items}}
+                    <div class="narrativeWithAudio-strapline-title">
+                        <h5 class="narrativeWithAudio-strapline-title-inner">
+                           {{{strapline}}} 
+                        </h5>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <a href="#" class="narrativeWithAudio-popup-open" tabindex="-1">
+                <div class="icon icon-plus"></div>
+            </a>
+            <div class="narrativeWithAudio-item-audio narrativeWithAudio-hidden">
+                {{#each items}}
+                {{#if audioSrc}}
+                <audio preload='metadata' hidden=hidden>
+                    {{#each audioTypes}}
+                    <source src="{{{../audioSrc}}}.{{type}}" type="{{{codec}}}">
+                    {{/each}}
+                </audio>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        
+        <div class="narrativeWithAudio-slide-container">
+   
+            <div class="narrativeWithAudio-popup narrativeWithAudio-hidden">
+                <div class="narrativeWithAudio-popup-inner">
+                    <div class="narrativeWithAudio-popup-toolbar">
+                        <div class="narrativeWithAudio-popup-toolbar-inner clearfix">
+                            {{#each items}}
+                            <div class="narrativeWithAudio-popup-toolbar-title">
+                                <h5 class="narrativeWithAudio-popup-toolbar-inner">
+                                    {{{title}}}
+                                </h5>
+                            </div>
+                            {{/each}}
+                            <a href="#" class="narrativeWithAudio-popup-close">
+                                <div class="icon icon-cross"></div>
+                            </a>
+                        </div>
+                    </div>
+                    {{#each items}}
+                    <div class="narrativeWithAudio-popup-content">
+                        <div class="narrativeWithAudio-popup-content-inner">
+                            {{{body}}}
+                        </div> 
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+  
+            <a href="#" class="narrativeWithAudio-controls narrativeWithAudio-control-left">
+                <div class="icon icon-controls-left"></div>
+            </a>
+            <a href="#" class="narrativeWithAudio-controls narrativeWithAudio-control-right">
+                <div class="icon icon-controls-right"></div>
+            </a>
+            
+            <div class="narrativeWithAudio-slider clearfix">
+                {{#each items}}
+                <div class="narrativeWithAudio-slider-graphic {{#if visited}}visited{{/if}}">
+                    <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{{graphic.title}}}"/>
+                </div>
+                {{/each}}
+            </div>
+            <div class="narrativeWithAudio-indicators">
+                {{#each items}}
+                <div class="narrativeWithAudio-progress"></div>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="narrativeWithAudio-content">
+            <div class="narrativeWithAudio-content-inner">
+                {{#each items}}
+                <div class="narrativeWithAudio-content-item">
+                    <div class="narrativeWithAudio-content-title">
+                        <h5 class="narrativeWithAudio-content-title-inner">
+                           {{{title}}} 
+                        </h5>
+                    </div>
+                    <div class="narrativeWithAudio-content-body">
+                        <div class="narrativeWithAudio-content-body-inner">
+                            {{{body}}}
+                        </div> 
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+    </div>    
+</div>

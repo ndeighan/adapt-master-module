@@ -1,0 +1,12 @@
+{
+  "_id":"c-30",
+  "_parentId":"b-05",
+  "_type":"component",
+  "_component":"targetPage",
+  "_classes":"",
+  "_layout":"full",
+    "targetPage": {
+        "linkText":"Next Chapter",
+        "targetId": "co-0x"
+    }
+}

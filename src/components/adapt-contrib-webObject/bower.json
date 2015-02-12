@@ -1,0 +1,17 @@
+{
+  "name": "adapt-contrib-webObject",
+  "version": "1.1.1",
+  "homepage": "",
+  "authors": [
+    "Niall Deighan <niall.deighan@injixo.com>"
+  ],
+  "displayName" : "WebObject",
+  "component" : "webObject",
+  "description": "A simple adapt core contributed blank component",
+  "main": "/js/adapt-contrib-webObject.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

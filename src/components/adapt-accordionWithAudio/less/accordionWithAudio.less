@@ -1,0 +1,68 @@
+.accordionWithAudio-component {
+
+  .accordionWithAudio-item {
+    margin-bottom: @item-spacing;
+  }
+
+  .accordionWithAudio-item-title-icon {
+    position: absolute;
+    top: 50%;
+    left: @item-padding-left;
+    margin-top: -(@icon-size/2);
+    color:@item-text-color;
+  }
+
+  .accordionWithAudio-item-title {
+    display: block;
+    position: relative;
+    padding: @item-padding;
+    padding-left:(@icon-size+(@item-padding-left*2));
+    color: @item-text-color;
+    background-color: @item-color;
+    text-decoration: none;
+
+    &.visited {
+      color:@item-text-visited-color;
+      background-color: @item-visited-color;
+    }
+
+    &.selected {
+      color:@item-text-visited-color;
+      background-color: @item-visited-color;
+    }
+  }
+  
+  .accordionWithAudio-item-body {
+    color:@foreground-color;
+    background-color:@background-color;
+    display: none;
+    border-right: @item-border;
+    border-left: @item-border;
+    border-bottom: @item-border;
+  }
+
+  .accordionWithAudio-item-body-inner {
+    padding: @item-padding;
+  }
+
+  .accordionWithAudio-hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+.no-touch {
+  .accordionWithAudio-component {
+    .accordionWithAudio-item-title {
+      &:hover {
+        color:@item-text-hover-color;
+        background-color: @item-hover-color;
+      }
+      &.visited:hover {
+        color:@item-text-disabled-color;
+        background-color: @item-disabled-color;
+      }
+    }
+  }
+}

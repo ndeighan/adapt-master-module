@@ -1,0 +1,16 @@
+{
+  "name": "adapt-narrativeWithAudio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/CrediPointSolutions/adapt-narrativeWithAudio",
+  "authors": [
+    "Himanshu Rajotia <himanshu.rajotia@credipoint.com>",
+    "CrediPoint Solutions <git@credipoint.com>"
+  ],
+  "description": "A component that displays an image gallery with accompanying text",
+  "main": "/js/adapt-narrativeWithAudio.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "adapt-theme-tccs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/darylhedley/adapt-contrib-vanilla",
+  "authors": [
+    "Daryl Hedley <darylhedley@hotmail.com>"
+  ],
+  "description": "A core bundled theme",
+  "main": "js/tccs.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

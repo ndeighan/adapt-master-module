@@ -1,0 +1,23 @@
+{
+  "name": "adapt-hotgraphicWithAudio",
+  "version": "0.0.1",
+  "description": "A contributed hot graphic component that enables a user to click on hot spots over an image and display a detailed popup that includes an image with text and play audio.",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CrediPointSolutions/adapt-hotgraphicWithAudio.git"
+  },
+  "author": "CrediPointSolutions",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/CrediPointSolutions/adapt-hotgraphicWithAudio/issues"
+  },
+  "devDependencies": {
+    "karma": "~0.9",
+    "karma-mocha": "*",
+    "karma-expect": "*"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id":"c-05",
+  "_parentId":"b-05",
+  "_type":"component",
+  "_component":"accordionWithAudio",
+  "_classes":"",
+  "_layout":"left",
+  "title": "Accordion",
+  "body": "This is optional body text. Select the headings below to reveal the text.",
+  "items": [
+    {
+      "alt": "Heading 1",
+      "title": "Heading 1",
+      "body": "This is display text 1.",
+      "audioSrc": "course/en/audio/page1-2",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    },
+    {
+      "alt": "Heading 2",
+      "title": "Heading 2",
+      "body": "This is display text 2.",
+      "audioSrc": "course/en/audio/page1-2",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    },
+    {
+      "alt": "Heading 3",
+      "title": "Heading 3",
+      "body": "This is display text 3.",
+      "audioSrc": "course/en/audio/page1-3",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    }
+  ]
+}

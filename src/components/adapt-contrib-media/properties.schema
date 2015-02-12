@@ -1,0 +1,47 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "properties":{
+    "_media": {
+      "type":"object",
+      "required":false,
+      "title": "Media options",
+      "properties":{
+        "mp4": {
+          "type":"string",
+          "required":false,
+          "title": "Video in mp4 format"
+        },
+        "ogv": {
+          "type":"string",
+          "required":false,
+          "title": "Video in ogv format"
+        },
+        "poster": {
+          "type":"string",
+          "required":false,
+          "title": "Poster graphic"
+        },
+        "transcriptLink": {
+          "type":"string",
+          "required":false,
+          "title": "Transcript file"
+        },
+        "transcriptText": {
+          "type":"string",
+          "required":true,
+          "minLength": 1,
+          "title": "Transcript display text"
+        }
+      }
+    },
+    "_setCompletionOn": {
+      "type":"string",
+      "required":true,
+      "enum": ["inview", "play", "ended"],
+      "title": "Set completion status"
+    }
+  }
+}

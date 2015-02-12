@@ -1,0 +1,44 @@
+{
+    "_id": "course",
+    "_type": "course",
+    "title": "Module Title",
+    "displayTitle": "Module Title",
+    "body": "This module was created using the Adapt framework.",
+    "_buttons": {
+        "submit": "Submit",
+        "reset": "Reset",
+        "showCorrectAnswer": "Model Answer",
+        "hideCorrectAnswer": "My Answer"
+    },
+    "_latestTrackingId": 7,
+    "_resources": {
+        "title": "Resources",
+        "description": "Click here to view resources for this course",
+        "_filterButtons": {
+            "all": "All",
+            "document": "PDF",
+            "media": "Media",
+            "link": "Link"
+        },
+        "_resourcesItems": [
+            {
+                "_type": "media",
+                "title": "injixo YouTube Channel",
+                "description": "Fancy catching up on some injixo news?",
+                "_link": "https://www.youtube.com/watch?v=-j9gk0meyjE"
+            },
+            {
+                "_type": "link",
+                "title": "Community",
+                "description": "Click here to visit our community site.",
+                "_link": "https://community.staging.injixo.com/"
+            },
+            {
+                "_type": "PDF",
+                "title": "PDF Documents",
+                "description": "Download PDF",
+                "_link": "course/en/pdf/adapt-framework-prototypes-buttons.pdf"
+            }
+        ]
+    }
+}

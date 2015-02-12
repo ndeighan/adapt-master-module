@@ -1,0 +1,86 @@
+[
+    {
+        "_id":"a-01",
+        "_parentId":"co-01",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 1",
+        "displayTitle":"Page 1",
+        "body":"",
+        "_trickle": {
+	        "_isEnabled": true,
+	        "button": "Continue"
+	    }
+    },
+    {
+        "_id":"a-02",
+        "_parentId":"co-01",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 1",
+        "displayTitle":"Page 2",
+        "body":"",
+        "_trickle": true
+    },
+	{
+        "_id":"a-03",
+        "_parentId":"co-01",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 1",
+        "displayTitle":"Page 3",
+        "body":"",
+        "_trickle": true
+    },
+	{
+        "_id":"a-04",
+        "_parentId":"co-02",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 2",
+        "displayTitle":"Page 1",
+        "body":"",
+        "_trickle": {
+	        "_isEnabled": true,
+	        "button": "Continue"
+	    }
+    },
+	{
+        "_id":"a-05",
+        "_parentId":"co-02",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 2",
+        "displayTitle":"Page 2",
+        "body":"",
+        "_trickle": true
+    },
+	{
+        "_id":"a-06",
+        "_parentId":"co-02",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 2",
+        "displayTitle":"Page 3",
+		"body":"",
+        "_trickle": true
+    },
+	{
+        "_id":"a-07",
+        "_parentId":"co-03",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 3",
+        "displayTitle":"Page 1",
+        "body":""
+    },
+    {
+        "_id":"a-08",
+	    "_parentId":"co-04",
+	    "_type":"article",
+	    "_classes":"",
+	    "title":"Chapter 4",
+	    "displayTitle":"Page 1",
+	    "body":""
+	    }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "adapt-menu-singlePageCourse",
+  "homepage": "https://github.com/adamlaird/adapt-menu-singlePageCourse",
+  "authors": [
+    "Adam Laird <adamj.laird@gmail.com>"
+  ],
+  "description": "Enables the use of a single page course without a menu, takes _id of first child in contentObjects and routes straight to it",
+  "main": "js/adapt-menu-singlePageCourse.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "f3da3a05c7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f3da3a05c7e38c381177e73c8a60bb52580ffa8b"
+  },
+  "_source": "git://github.com/adamlaird/adapt-menu-singlePageCourse.git",
+  "_target": "*",
+  "_originalSource": "adapt-menu-singlePageCourse",
+  "_direct": true
+}

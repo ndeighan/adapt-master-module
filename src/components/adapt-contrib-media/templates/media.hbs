@@ -1,0 +1,38 @@
+<div class="media-inner component-inner" role="region" aria-label="{{_globals._components._media.ariaRegion}}">
+    {{> component this}}
+    <div class="media-widget component-widget">
+
+    {{#if _media.mp3}}
+      <audio src="{{_media.mp3}}" type="audio/mp3"/>
+    {{else}}
+      {{#if _media.ogg}}
+        <audio src="{{_media.ogg}}" type="audio/ogg"/>
+      {{else}}
+        <video preload="metadata" width="1024px" height="576px" poster="{{_media.poster}}" style="width:100%; height:100%;">
+          {{#if _media.source}}
+            <source src="{{_media.source}}" type="{{_media.type}}"/>
+          {{else}}
+            <source src="{{_media.mp4}}" type="video/mp4"/>
+            <source src="{{_media.ogv}}" type="video/ogg"/>
+          {{/if}}
+        </video>
+      {{/if}}
+    {{/if}}
+	<div class="vidtext">
+		<p>Select the play button to start the video.</p>
+	</div>
+    {{#if _media.transcriptLink}}
+    <div class="media-transcript-container" role="document">
+      <a href="{{_media.transcriptLink}}" target="_blank" class="media-transcript button">
+        <div class="transcript-text-container">
+          {{#if _media.transcriptText}}
+            {{_media.transcriptText}}
+          {{else}}
+            {{_media.transcriptLink}}
+          {{/if}}
+        </div>
+      </a>
+    </div>
+    {{/if}}
+    </div>
+</div>

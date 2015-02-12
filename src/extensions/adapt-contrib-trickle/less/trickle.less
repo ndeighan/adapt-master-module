@@ -1,0 +1,45 @@
+.extension-trickle {
+  text-align: center;
+
+  .trickle-button {
+    display: inline-block;
+    -webkit-border-top-left-radius: 100px;
+    -webkit-border-top-right-radius: 100px;
+    -moz-border-radius-topleft: 100px;
+    -moz-border-radius-topright: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px; 
+    position: fixed;
+    z-index: 500; 
+    bottom: 0; 
+    left: 40%;
+    width: 20%;
+    outline: none;
+    text-decoration: none;
+    background-color: #333;
+    color: @item-text-color;
+    padding: @item-padding;
+  }
+
+  .trickle-button-show {
+    display:block;
+    visibility:visible;
+  }
+
+}
+
+.no-touch {
+  .extension-trickle {
+    .trickle-button {
+      &:hover{
+        color: @item-text-hover-color;
+        background-color: @item-hover-color;
+      }
+    }
+  }
+}
+
+.trickle-hidden {
+  display:none;
+  visibility:hidden;
+}

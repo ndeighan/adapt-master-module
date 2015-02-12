@@ -1,0 +1,56 @@
+[
+    {
+        "_id":"co-01",
+        "_parentId":"course",
+        "_type":"page",
+        "_classes":"",
+        "title":"Chapter 1",
+        "displayTitle":"Chapter 1",
+        "body":"Text for more information on chapter goes here.",
+        "_graphic": {
+            "alt": "Chapter 1",
+            "src": "course/en/images/narrative_1.png"
+        },
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-02",
+        "_parentId":"course",
+        "_type":"page",
+        "_classes":"",
+        "title":"Chapter 2",
+        "displayTitle":"Chapter 2",
+        "body":"Text for more information on chapter goes here.",
+        "_graphic": {
+            "alt": "Chapter 2",
+            "src": "course/en/images/narrative_2.png"
+        },
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-03",
+        "_parentId":"course",
+        "_type":"page",
+        "_classes":"",
+        "title":"Chapter 3",
+        "displayTitle":"Chapter 3",
+        "body":"Text for more information on chapter goes here.<br>     .",
+
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-04",
+        "_parentId":"course",
+        "_type":"page",
+        "_classes":"",
+        "title":"Chapter 4",
+        "displayTitle":"Chapter 4",
+        "body":"Text for more information on chapter goes here. Lorem ipsum ad nausiem etc etc",
+        
+        "linkText":"View",
+        "duration":"2 mins"
+    }
+]

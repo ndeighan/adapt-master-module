@@ -1,0 +1,77 @@
+{{! Maintainers - Kevin Corry}}
+<div class="hotgraphicWithAudio-inner component-inner">
+    {{#if title}}
+    <div class="hotgraphicWithAudio-title component-title">
+        <h4 class="hotgraphicWithAudio-title-inner component-title-inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="hotgraphicWithAudio-body component-body">
+        <div class="hotgraphicWithAudio-body-inner component-body-inner">
+            {{{body}}}
+        </div>
+    </div>
+    {{/if}}
+    <div class="hotgraphicWithAudio-widget component-widget">
+        <div class="hotgraphicWithAudio-graphic">
+            <div class="hotgraphicWithAudio-popup">
+                <div class="hotgraphicWithAudio-popup-toolbar clearfix">
+                    <div class="hotgraphicWithAudio-popup-nav">
+                        <a href="#" class="hotgraphicWithAudio-popup-controls back" title="back" alt="back">
+                            <div class="hotgraphicWithAudio-popup-arrow-l icon icon-controls-small-left"></div>
+                        </a>
+                        <div class="hotgraphicWithAudio-popup-count">
+                            <span class="current">1</span>/<span class="total">3</span>
+                        </div>
+                        <a href="#" class="hotgraphicWithAudio-popup-controls next" title="next" alt="next">
+                            <div class="hotgraphicWithAudio-popup-arrow-r icon icon-controls-small-right"></div>
+                        </a>
+                    </div>
+                    <a href="#" class="hotgraphicWithAudio-popup-done" alt="done" title="done">
+                        <div class="hotgraphicWithAudio-popup-close icon icon-cross"></div>
+                    </a>
+                </div>
+                <div class="hotgraphicWithAudio-popup-inner clearfix">
+                    {{#each items}}
+                    <div class="hotgraphicWithAudio-item item-{{@index}}">
+                        <div class="hotgraphicWithAudio-item-graphic">
+                            <div class="hotgraphicWithAudio-item-graphic-inner">
+                                <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{{graphic.title}}}"/>
+                            </div>
+                        </div>
+                        <div class="hotgraphicWithAudio-item-body">
+                            <div class="hotgraphicWithAudio-item-body-inner">
+                                <h5>
+                                    {{{title}}}
+                                </h5>
+
+                                <p>
+                                    {{{body}}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{{graphic.title}}}"/>
+            {{#each items}}
+            <a href="#" class="hotgraphicWithAudio-graphic-pin {{#if _isVisited}}visited{{/if}}" data-id="item-{{@index}}" style="top:{{{top}}}%; left:{{{left}}}%;" title="{{graphicTitle}}">
+                <div class="hotgraphicWithAudio-graphic-pin-icon icon icon-pin"></div>
+                {{#if audioSrc}}
+                <div class="hotgraphicWithAudio-item-audio hotgraphicWithAudio-hidden">
+                    <audio preload='metadata' hidden=hidden>
+                        {{#each audioTypes}}
+                        <source src="{{{../audioSrc}}}.{{type}}" type="{{{codec}}}">
+                        {{/each}}
+                    </audio>
+                </div>
+                {{/if}}
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

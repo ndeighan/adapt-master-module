@@ -1,0 +1,46 @@
+{{! Maintainers - Himanshu Rajotia <himanshu.rajotia@credipoint.com>, CrediPoint Solutions <git@credipoint.com>}}
+<div class="accordionWithAudio-inner component-inner">
+    {{#if title}}
+    <div class="accordionWithAudio-title component-title">
+        <h4 class="accordionWithAudio-title-inner component-title-inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="accordionWithAudio-body component-body">
+        <div class="accordionWithAudio-body-inner component-body-inner">
+            {{{body}}}
+        </div>
+    </div>
+    {{/if}}
+    <div class="accordionWithAudio-widget component-widget">
+        {{#each items}}
+        <div class="accordionWithAudio-item">
+            <a href="#" class="accordionWithAudio-item-title {{#if _isVisited}}visited{{/if}}" title="{{alt}}">
+                <div class="accordionWithAudio-item-title-inner">
+                    <div class="accordionWithAudio-item-title-icon icon icon-plus"></div>
+                    <h5>
+                        {{{title}}}
+                    </h5>
+                </div>
+            </a>
+
+            <div class="accordionWithAudio-item-body">
+                <div class="accordionWithAudio-item-body-inner">
+                    {{{body}}}
+                </div>
+            </div>
+            {{#if audioSrc}}
+            <div class="accordionWithAudio-item-audio accordionWithAudio-hidden">
+                <audio preload='metadata' hidden=hidden>
+                    {{#each audioTypes}}
+                        <source src="{{{../audioSrc}}}.{{type}}" type="{{{codec}}}">
+                    {{/each}}
+                </audio>
+            </div>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>

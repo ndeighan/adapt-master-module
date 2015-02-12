@@ -1,0 +1,158 @@
+[
+
+{ 
+  "comment": "Video content",    
+  "_id":"c-05",
+  "_parentId":"b-05",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 1",
+  "displayTitle":"Component 1 Title",
+  "body":"Component 1 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},  
+
+{
+  "_id":"c-10",
+  "_parentId":"b-10",
+  "_type":"component",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 2",
+  "displayTitle":"Component 2 Title",
+  "body":"Component 2 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
+  
+{
+  "_id":"c-15",
+  "_parentId":"b-15",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 3",
+  "displayTitle":"Component 3 Title",
+  "body":"Component 3 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
+    
+{
+  "_id":"c-19",
+  "_parentId":"b-19",
+  "_type":"component",
+  "_component":"targetPage",
+  "_classes":"",
+  "_layout":"full",
+    "linkText":"Next Chapter",
+    "targetId": "co-02"
+},
+    
+{
+  "_id":"c-20",
+  "_parentId":"b-20",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 4",
+  "displayTitle":"Component 4 Title",
+  "body":"Component 4 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
+    
+{
+  "_id":"c-25",
+  "_parentId":"b-25",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 5",
+  "displayTitle":"Component 5 Title",
+  "body":"Component 5 text",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
+    
+{
+  "_id":"c-30",
+  "_parentId":"b-30",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 6",
+  "displayTitle":"Component 6 Title",
+  "body":"Component 6 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
+    
+{
+  "_id":"c-34",
+  "_parentId":"b-34",
+  "_type":"component",
+  "_component":"targetPage",
+  "_classes":"",
+  "_layout":"full",
+    "linkText":"Next Chapter",
+    "targetId": "co-03"
+},
+    
+{
+  "_id":"c-35",
+  "_parentId":"b-35",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 7",
+  "displayTitle":"Component 7 Title",
+  "body":"Component 7 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+  }
+},
+    
+{
+  "_id":"c-39",
+  "_parentId":"b-39",
+  "_type":"component",
+  "_component":"targetPage",
+  "_classes":"",
+  "_layout":"full",
+    "linkText":"Next Chapter",
+    "targetId": "co-04"
+},
+    
+{
+  "_id":"c-40",
+  "_parentId":"b-40",
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 8",
+  "displayTitle":"Component 8 Title",
+  "body":"Component 8 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+}
+    
+]

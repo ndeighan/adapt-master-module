@@ -1,0 +1,25 @@
+.blank-component {
+	.targetPage-inner {
+        
+	}
+}
+  .targetPage-component {
+        width: 100%;
+        text-align: center;      
+      
+		a {
+            text-decoration: none;
+			background-color:#333;
+			color:@button-text-color;
+        
+			&:hover {
+				background-color:@button-hover-color;
+				color:@button-text-hover-color;
+			}
+			
+			&.visited {
+				background-color:@button-disabled-color;
+				color:@button-text-disabled-color;
+			}
+    }
+  }

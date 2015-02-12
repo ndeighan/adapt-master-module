@@ -1,0 +1,47 @@
+.media-component {
+	.me-plugin {
+    position:static;
+	}
+  .mejs-container .mejs-controls .mejs-time {
+    padding-right:1px;
+    padding-left:1px;
+  }
+  .external-source {
+    .mejs-container {
+        position: relative;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+    }
+    .mejs-container iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .mejs-overlay-button {
+      display: none;
+    }
+  }
+  
+  .media-transcript {
+    padding: @button-padding;
+	float: right;
+    display: inline-block;
+    color: @button-text-color;
+    background-color: @button-color;
+    text-decoration: none;
+    &:hover {
+      color: @button-text-hover-color;
+      background-color: @button-hover-color;
+    }
+  }
+}
+.vidtext {
+	padding-top: 20px;
+	float: left;
+	display: inline-block;
+	text-decoration: none;
+	
+}

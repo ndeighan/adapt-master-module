@@ -1,0 +1,17 @@
+{
+  "name": "adapt-dragdrop",
+  "version": "0.9.1",
+  "repository": "git://github.com/KevCJones/adapt-dragdrop.git",
+  "homepage": "https://github.com/cajones/adapt-dragdrop",
+  "authors": [
+    "Kevin Jones <him@kevincjones.co.uk>"
+  ],
+  "description": "Drag Drop description here",
+  "main": "/js/adapt-dragdrop.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component",
+    "adapt-dragdrop"
+  ],
+  "license": "GPLv3"
+}

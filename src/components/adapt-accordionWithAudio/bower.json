@@ -1,0 +1,16 @@
+{
+  "name": "adapt-accordionWithAudio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/CrediPointSolutions/adapt-accordionWithAudio",
+  "authors": [
+    "Himanshu Rajotia <himanshu.rajotia@credipoint.com>",
+    "CrediPoint Solutions <git@credipoint.com>"
+  ],
+  "description": "An accordion component that displays clickable titles, which reveal display text, and play audio.",
+  "main": "/js/adapt-accordionWithAudio.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "adapt-contrib-targetPage",
+  "version": "10",
+  "homepage": "",
+  "authors": [
+    "Niall Deighan <niall.deighan@injixo.com>"
+  ],
+  "displayName" : "TargetPage",
+  "component" : "targetPage",
+  "description": "A component to target another page/article/id",
+  "main": "/js/adapt-targetPage.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

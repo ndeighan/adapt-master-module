@@ -1,0 +1,100 @@
+.page-level-progress-item-title {
+	background-color:@drawer-item-color;
+	color:@drawer-item-text-color;
+	text-decoration: none;
+	padding:@item-padding;
+	display:block;
+	&.disabled {
+		background-color:@item-disabled-color;
+		color:@item-text-disabled-color;
+        &:hover {
+            background-color:@item-disabled-color!important;
+            color:@item-text-disabled-color!important;
+        }
+	}
+    .drawer-item-open {
+        padding:@drawer-item-padding;
+        display:block;
+    }
+    &:hover {
+        background-color:@drawer-item-hover-color;
+        color:@drawer-item-text-hover-color;
+        .page-level-progress-indicator-complete {
+            .page-level-progress-indicator-bar {
+                background-color:@custom_primary_color;
+            }
+        }
+    }
+}
+
+.page-level-progress-item-title-inner {
+	float:left;
+	width:80%;
+}
+
+.page-level-progress-indicator {
+	width: 16%;
+	height: 10px;
+    margin-left:4%;
+    display: inline-block;
+	border-radius:5px;
+	overflow:hidden;
+	background-color:@background-color;
+}
+
+.page-level-progress-indicator-complete {
+    .page-level-progress-indicator-bar {
+        width:100%;
+        height:10px;
+        background-color:@custom_primary_color;
+        &:hover {
+            background-color:@item-color;
+        }
+    }
+}
+
+
+
+.page-level-progress-indicator-bar {
+	width:0%;
+}
+
+.page-level-progress-navigation {
+		padding-top:(@navigation-padding+6px);
+    padding-right:(@navigation-padding+30px);
+    padding-bottom:(@navigation-padding+6px);
+    padding-left:(@navigation-padding+6px);
+	@media all and (max-width:(@device-width-medium - 1px)) {
+        padding-top:(@navigation-padding-mobile+6px);
+        padding-right:(@navigation-padding-mobile+30px);
+        padding-bottom:(@navigation-padding-mobile+6px);
+        padding-left:(@navigation-padding-mobile+6px);
+    }
+	float:right;
+	display:inline-block;
+	&:hover {
+		.page-level-progress-navigation-completion {
+			background-color: @background-color;
+		}
+		.page-level-progress-navigation-bar {
+		    background-color: @custom_primary_color;
+		}
+	}
+}
+
+.page-level-progress-navigation-completion {
+    width: 100px;
+    height: 8px;
+    background-color: (@background-color);
+    overflow: hidden;
+    border: 2px solid @background-color;
+    position: relative;
+    border-radius: 5px;
+}
+
+.page-level-progress-navigation-bar {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: @custom_primary_color;
+}

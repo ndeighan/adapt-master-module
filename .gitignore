@@ -1,0 +1,5 @@
+build
+.DS_Store
+test/acceptance/tests
+test/acceptance/reports
+test/acceptance/tests_output

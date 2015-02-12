@@ -1,0 +1,20 @@
+<div class="dragdrop-inner dragdrop-inner">
+    {{> component this}}
+   <div class="dragdrop-widget component-widget {{#unless _isEnabled}} disabled {{#if _isComplete}} complete submitted user {{#if _isCorrect}}correct{{/if}} {{/if}} {{/unless}}">
+    	
+        <div class="dragdrop-container">
+            <div class="dragdrop-background">{{{_background}}}</div>
+            {{#each _items}}
+                <div id="{{this.id}}" class="ui-dragdrop-item {{this.class}}">{{{this.innerBody}}}</div>
+            {{/each}}
+
+            {{#each _draggableItems}}
+                <div id="{{this.id}}" class="ui-dragdrop-item {{this.class}}">{{{this.innerBody}}}</div>
+            {{/each}}
+        	
+        </div>
+        <div class="buttons" style="clear:both">
+            {{> buttons this}}
+        </div>
+    </div>
+</div>  
