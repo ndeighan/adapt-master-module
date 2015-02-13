@@ -8,7 +8,7 @@
   "displayName" : "WebObject",
   "component" : "webObject",
   "description": "A simple adapt core contributed blank component",
-  "main": "/js/adapt-contrib-webObject.js",
+  "main": "/js/adapt-webObject.js",
   "keywords": [
     "adapt-plugin",
     "adapt-component"
