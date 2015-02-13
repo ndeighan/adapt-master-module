@@ -1,5 +1,5 @@
 /*
-* adapt-contrib-webObject
+* adapt-webObject
 */
 define(function(require) {
   var ComponentView = require('coreViews/componentView');

@@ -1366,27 +1366,6 @@ function program15(depth0,data) {
   return buffer;
   });
 
-this["Handlebars"]["templates"]["webObject"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
-  var buffer = "", stack1, self=this, functionType="function", escapeExpression=this.escapeExpression;
-
-
-  buffer += "<div class=\"webObject-inner component-inner\">\n	    ";
-  stack1 = self.invokePartial(partials.component, 'component', depth0, helpers, partials, data);
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n	\n	<div class=\"webObject-component\">\n		<object type=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.type)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" data=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.data)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" width=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.width)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" height=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.height)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\">\n	    </object>\n	</div>\n	\n</div>\n";
-  return buffer;
-  });
-
 this["Handlebars"]["templates"]["dragdrop"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
@@ -1782,6 +1761,27 @@ function program1(depth0,data) {
   else { helper = (depth0 && depth0.linkText); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n		</a>\n	</div>\n\n</div>\n";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["webObject"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
+  var buffer = "", stack1, self=this, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<div class=\"webObject-inner component-inner\">\n	    ";
+  stack1 = self.invokePartial(partials.component, 'component', depth0, helpers, partials, data);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n	\n	<div class=\"webObject-component\">\n		<object type=\""
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.type)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" data=\""
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.data)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" width=\""
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.width)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" height=\""
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._webObject)),stack1 == null || stack1 === false ? stack1 : stack1.height)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\">\n	    </object>\n	</div>\n	\n</div>\n";
   return buffer;
   });
 
