@@ -162,6 +162,19 @@
     }
   }
 
+  .narrativePlayButton {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    z-index: 500;
+    .icon {
+      color: @inverted-foreground-color;
+      &:hover {
+        color: lighten(@inverted-background-color, 30%);
+      }
+    }
+  }
+
   .narrativeWithAudio-popup-close {
     display: inline-block;
     float: right;

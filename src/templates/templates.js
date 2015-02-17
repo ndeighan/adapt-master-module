@@ -1700,7 +1700,7 @@ function program20(depth0,data) {
   if (helper = helpers.body) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.body); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                        </div> \n                    </div>\n                </div>\n                ";
+  buffer += "\n							<a href=\"#\" class=\"narrativePlayButton\" tabindex=\"-1\">\n				                <div class=\"icon icon-speaker\"></div>\n				            </a>	\n                        </div> \n                    </div>\n                </div>\n                ";
   return buffer;
   }
 

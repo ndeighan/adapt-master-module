@@ -3884,6 +3884,19 @@ override the defaults and extend as i see fit.
     }
   }
 
+  .narrativePlayButton {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    z-index: 500;
+    .icon {
+      color: @inverted-foreground-color;
+      &:hover {
+        color: lighten(@inverted-background-color, 30%);
+      }
+    }
+  }
+
   .narrativeWithAudio-popup-close {
     display: inline-block;
     float: right;
@@ -4573,8 +4586,19 @@ h6 {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'fontawesome';
+	src:url('fonts/fontawesome-webfont.eot');
+	src:url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/fontawesome-webfont.woff') format('woff'),
+		url('fonts/fontawesome-webfont.ttf') format('truetype'),
+		url('fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .icon {
-	font-family: 'vanilla';
+	font-family: 'vanilla', 'fontawesome';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -4595,6 +4619,9 @@ h6 {
     color:@foreground-color;
 }
 
+.icon-speaker:before {
+	content: "\f028";
+}
 .icon-arrow-left:before {
 	content: "\e600";
 }

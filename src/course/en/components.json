@@ -1,32 +1,76 @@
 [
 
-{ 
-  "comment": "Video content",    
+{  
   "_id":"c-05",
   "_parentId":"b-05",
   "_type":"component",
   "_component":"text",
   "_classes":"",
   "_layout":"full",
-  "title":"Component 1",
-  "displayTitle":"Component 1 Title",
-  "body":"Component 1 text.",
+  "title":"Component 3",
+  "displayTitle":"Component 3 Title",
+  "body":"Component 3 text.",
   "_pageLevelProgress": {
       "_isEnabled": true
     }
-},  
+}, 
 
 {
   "_id":"c-10",
   "_parentId":"b-10",
-  "_type":"component",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 2",
-  "displayTitle":"Component 2 Title",
-  "body":"Component 2 text.",
+  "_classes": "",
+  "_type": "component",
+  "_layout": "full",
+  "_component": "narrativeWithAudio",
+  "title": "Narrative",
+  "body": "This is optional body text. Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
+  "items": [
+    {
+      "title": "Narrative stage 1 title",
+      "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
+      "graphic": {
+        "src": "course/en/images/narrative_1.png",
+        "alt": "First graphic",
+        "title": "Second graphic"
+      },
+      "strapline": "Here is the first...",
+      "audioSrc": "course/en/audio/Bronze",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    },
+    {
+      "title": "Narrative stage 2 title",
+      "body": "This is display text 2.",
+      "graphic": {
+        "src": "course/en/images/narrative_2.png",
+        "alt": "Second graphic",
+        "title": "Second graphic"
+      },
+      "strapline": "Now comes the second...",
+      "audioSrc": "course/en/audio/Silver",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    },
+    {
+      "title": "Narrative stage 3 title",
+      "body": "This is display text 3.",
+      "graphic": {
+        "src": "course/en/images/narrative_3.png",
+        "alt": "Third graphic",
+        "title": "Third graphic"
+      },
+      "strapline": "Third here!",
+      "audioSrc": "course/en/audio/Gold",
+      "audioTypes": [
+        {"type":"ogg", "codec": "audio/ogg"},
+        {"type": "mp3", "codec": "audio/mpeg"}
+      ]
+    }
+  ],
   "_pageLevelProgress": {
       "_isEnabled": true
     }

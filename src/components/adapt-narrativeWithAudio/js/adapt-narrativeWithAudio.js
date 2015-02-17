@@ -313,3 +313,19 @@ define(function(require) {
   return NarrativeWithAudio;
 
 });
+
+/*    playAudio: function($currentElement) {
+      var audioElement;
+      if ($currentElement.hasClass('.accordionWithAudio-item')) {
+        audioElement = $currentElement.find('.accordionWithAudio-item-audio audio')[0];
+      } else {
+        audioElement = $currentElement.siblings('.accordionWithAudio-item-audio').find('audio')[0];
+      }
+      if (audioElement) {
+        this.stopAllAudios();
+        if (audioElement.currentTime == 0) {
+          audioElement.play();
+        }
+      }
+    },
+    */
