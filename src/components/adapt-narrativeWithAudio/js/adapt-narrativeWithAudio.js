@@ -14,11 +14,13 @@ define(function(require) {
       return Adapt.device.touch == true ? {
         'touchstart .narrativeWithAudio-slider': 'navigateTouch',
         'touchstart .narrativeWithAudio-popup-open': 'openNarrative',
+		'touchstart .narrativePlayButton': 'playNarrative',
         'click .narrativeWithAudio-popup-close': 'closeNarrative',
         'click .narrativeWithAudio-controls': 'navigateClick'
       } : {
         'click .narrativeWithAudio-controls': 'navigateClick',
         'click .narrativeWithAudio-popup-open': 'openNarrative',
+		'click .narrativePlayButton': 'playNarrative',
         'click .narrativeWithAudio-popup-close': 'closeNarrative'
       }
     },
@@ -80,7 +82,7 @@ define(function(require) {
       this.calculateWidths();
       this.evaluateNavigation();
     },
-
+/**
     reRender: function() {
       if (this.model.get('_wasHotgraphic') && Adapt.device.screenSize == 'large') {
         this.replaceWithHotgraphic();
@@ -102,7 +104,7 @@ define(function(require) {
       model.set('body', model.get('originalBody'));
       return model;
     },
-
+**/
     navigateClick: function(event) {
       event.preventDefault();
       if (!this.model.get('_active')) return;
@@ -256,6 +258,16 @@ define(function(require) {
         this.setCompletionStatus();
       }
     },
+	
+	playNarrative: function(event) {
+	  event.preventDefault();
+	  //disables hash link
+      this.model.set('_active', false);
+      this.model.set("_currentAudioElement", $(event.currentTarget).siblings('.narrativeWithAudio-item-audio').find('audio')[this.model.get('_stage')]);
+      this.playAudioForElement(this.model.get("_currentAudioElement"));	
+	  //is class hidden?
+	  
+	},
 
     openNarrative: function(event) {
       event.preventDefault();

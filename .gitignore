@@ -3,3 +3,4 @@ build
 test/acceptance/tests
 test/acceptance/reports
 test/acceptance/tests_output
+src/course/en/audio
