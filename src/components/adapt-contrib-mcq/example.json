@@ -38,6 +38,15 @@
             "final": "This feedback will appear if you answered part of the question correctly."
       }
 	},
+    "_graphic": {
+        "src": "course/en/images/image.png",
+        "alt": "alt text",
+        "title": "title"
+      },
+    "_media": {
+        "mp3": "course/en/audio/audio.mp3",
+        "ogg": "course/en/audio/audio.ogg"
+    },
 	"_buttons":{
 		"submit":"",
 		"reset":"",
