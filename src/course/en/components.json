@@ -40,6 +40,15 @@
             "final": "This feedback will appear if you answered part of the question correctly."
       }
 	},
+        "_graphic": {
+        "src": "course/en/images/allison.png",
+        "alt": "alt text",
+        "title": "title"
+      },
+    "_media": {
+        "mp3": "course/en/audio/Bronze.mp3",
+        "ogg": "course/en/audio/Bronze.ogg"
+    },
 	"_buttons":{
 		"submit":"",
 		"reset":"",
@@ -71,10 +80,11 @@
                     "alt": "First graphic",
                     "title": "Second graphic"
                 },
-               "_media": {
-                "mp3": "course/en/audio/Bronze.mp3",
-                "ogg": "course/en/audio/Bronze.ogg"
-            },
+				"audioSrc": "course/en/audio/Bronze",
+     			"audioTypes": [
+        			{"type":"ogg", "codec": "audio/ogg"},
+        			{"type": "mp3", "codec": "audio/mpeg"}
+      			],
                 "strapline": "Here is the first..."
             },
             {
@@ -85,10 +95,11 @@
                     "alt": "Second graphic",
                     "title": "Second graphic"
                 },
-               "_media": {
-                "mp3": "course/en/audio/Silver.mp3",
-                "ogg": "course/en/audio/Silver.ogg"
-            },
+               "audioSrc": "course/en/audio/Silver",
+     			"audioTypes": [
+        			{"type":"ogg", "codec": "audio/ogg"},
+        			{"type": "mp3", "codec": "audio/mpeg"}
+      			],
                 "strapline": "Now comes the second..."
             },
             {
@@ -99,10 +110,11 @@
                     "alt": "Third graphic",
                     "title": "Third graphic"
                 },
-               "_media": {
-                "mp3": "course/en/audio/Gold.mp3",
-                "ogg": "course/en/audio/Gold.ogg"
-            },
+               "audioSrc": "course/en/audio/Gold",
+     			"audioTypes": [
+        			{"type":"ogg", "codec": "audio/ogg"},
+        			{"type": "mp3", "codec": "audio/mpeg"}
+      			],
                 "strapline": "Third here!"
             }
         ]
@@ -137,16 +149,77 @@
 {
   "_id":"c-20",
   "_parentId":"b-20",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 4",
-  "displayTitle":"Component 4 Title",
-  "body":"Component 4 text.",
-  "_pageLevelProgress": {
-      "_isEnabled": true
+  "_classes": "",
+  "_type": "component",
+  "_layout": "full",
+  "_component": "narrativeWithAudio",
+  "title": "Narrative",
+  "body": "This is optional body text. Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
+  "items": [
+    {
+      "title": "Narrative stage 1 title",
+      "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
+      "graphic": {
+        "src": "course/en/images/narrative_1.png",
+        "alt": "First graphic",
+        "title": "Second graphic"
+      },
+      "strapline": "Here is the first...",
+      "audioSrc": "course/en/audio/Bronze",
+      "audioTypes": [
+        {
+          "type": "ogg",
+          "codec": "audio/ogg"
+        },
+        {
+          "type": "mp3",
+          "codec": "audio/mpeg"
+        }
+      ]
+    },
+    {
+      "title": "Narrative stage 2 title",
+      "body": "This is display text 2.",
+      "graphic": {
+        "src": "course/en/images/narrative_2.png",
+        "alt": "Second graphic",
+        "title": "Second graphic"
+      },
+      "strapline": "Now comes the second...",
+      "audioSrc": "course/en/audio/Silver",
+      "audioTypes": [
+        {
+          "type": "ogg",
+          "codec": "audio/ogg"
+        },
+        {
+          "type": "mp3",
+          "codec": "audio/mpeg"
+        }
+      ]
+    },
+    {
+      "title": "Narrative stage 3 title",
+      "body": "This is display text 3.",
+      "graphic": {
+        "src": "course/en/images/narrative_3.png",
+        "alt": "Third graphic",
+        "title": "Third graphic"
+      },
+      "strapline": "Third here!",
+      "audioSrc": "course/en/audio/Gold",
+      "audioTypes": [
+        {
+          "type": "ogg",
+          "codec": "audio/ogg"
+        },
+        {
+          "type": "mp3",
+          "codec": "audio/mpeg"
+        }
+      ]
     }
+  ]
 },
     
 {
