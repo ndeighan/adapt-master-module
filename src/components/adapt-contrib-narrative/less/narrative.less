@@ -13,13 +13,59 @@
         .narrative-strapline {
             display:none;
         }
+
+        .narrative-content-inner {
+            .narrative-controls {
+                position:static;
+                display:none;
+                margin-top: 0px;
+                margin-bottom:10px;
+                width:auto;
+                height:auto;
+                padding:8px;
+                .icon {
+                    margin:0px;
+                }
+            }
+            .narrative-indicators {
+                display:none;
+                position: relative;
+                top: -4px;
+            }
+            .narrative-progress {
+                background-color:darken(@inverted-background-color, 10%);
+                &.selected {
+                    background-color: @item-text-color; 
+                }
+            }
+        }
+
+        .narrative-text-controls {
+            .narrative-content-inner {
+                .narrative-controls {
+                    display:inline-block;
+                }
+                .narrative-indicators {
+                    display:inline-block;
+                }
+            }
+            .narrative-slide-container {
+                .narrative-controls {
+                    display:none;
+                }
+                .narrative-indicators {
+                    display:none;
+                }
+            }
+
+        }
     }
 
     .narrative-content {
         float: left;
         width: 36%;
-        background: #fff;
-        color: @foreground-color;
+        background: @inverted-background-color;
+        color: @inverted-foreground-color;
     }
 
     .narrative-content-inner {
@@ -93,22 +139,10 @@
 
     .narrative-control-left {
         left: 0;
-        -webkit-border-top-left-radius: 100px;
-        -webkit-border-bottom-left-radius: 100px;
-        -moz-border-radius-topleft: 100px;
-        -moz-border-radius-bottomleft: 100px;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
     }
 
     .narrative-control-right {
         right: 0;
-        -webkit-border-top-right-radius: 100px;
-        -webkit-border-bottom-right-radius: 100px;
-        -moz-border-radius-topright: 100px;
-        -moz-border-radius-bottomright: 100px;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
     }
 
     .narrative-strapline {

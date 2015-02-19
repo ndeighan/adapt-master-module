@@ -4,6 +4,13 @@
   "id": "http://jsonschema.net",
   "$ref": "http://localhost/plugins/content/component/model.schema",
   "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
     "instruction": {
       "type": "string",
       "required": false,
@@ -11,6 +18,15 @@
       "inputType": "Text",
       "validators": [],
       "help": "This is the instruction text"
+    },
+    "_hasNavigationInTextArea": {
+      "type":"boolean",
+      "required":true,
+      "default": true,
+      "title": "Move navigation to text area",
+      "inputType": {"type": "Boolean", "options": [false, true]},
+      "validators": [],
+      "help": "If set to 'true', all navigation elements will be moved to the text area"
     },
     "_items": {
       "type":"array",
