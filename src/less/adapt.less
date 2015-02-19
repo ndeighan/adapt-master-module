@@ -302,6 +302,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 	
 	.menu-item-title {
 		padding:@menu-body-padding;
+        font-size:21px;
 	}
 
 	.menu-item-body {
@@ -312,8 +313,11 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 		padding:@menu-body-padding;
 		
 		a {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
 			text-decoration: none;
-			background-color:@primary-color;
+			background-color:@tccs-orange-color;
 			color:@button-text-color;
 			padding:@button-padding;
 			
@@ -4586,6 +4590,9 @@ override the defaults and extend as i see fit.
 // ==============
 
 .button {
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     margin-top:@button-margin-top;
     margin-bottom:@button-margin-bottom;
     background-color:@button-color;

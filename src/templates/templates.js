@@ -2911,17 +2911,12 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 this["Handlebars"]["templates"]["page"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, functionType="function", self=this;
+  var buffer = "", stack1, self=this;
 
 function program1(depth0,data) {
   
-  var buffer = "", stack1, helper;
-  buffer += "\n    <div class=\"page-title\">\n        <h1 class=\"page-title-inner\">\n            ";
-  if (helper = helpers.displayTitle) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.displayTitle); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n        </h1>\n    </div>\n    ";
-  return buffer;
+  
+  return "\n    <div class=\"page-title\">\n    </div>\n    ";
   }
 
   buffer += "\n\n<div class=\"page-inner article-container\">\n    \n    ";
