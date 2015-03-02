@@ -8,15 +8,18 @@
     </div>
     <div class="tutor-content">
             <div class="tutor-audio">
-                {{#if _media.mp3}}
-            <audio src="{{_media.mp3}}" type="audio/mp3" autoplay />
+                {{#if feedbackAudioMp3}}
+            <audio src="{{{feedbackAudioMp3}}}" type="audio/mp3" autoplay />
                 {{else}}
-            <audio src="{{_media.ogg}}" type="audio/ogg" autoplay />
+            <audio src="{{{feedbackAudioOgg}}}" type="audio/ogg" autoplay />
                 {{/if}}
             </div>
+			
+		{{#if feedbackGraphic}}
         <div class="tutor-image">
-                <img src="{{_graphic.src}}" alt="{{_graphic.alt}}" title="{{{_graphic.title}}}"/>
+                <img src="{{{feedbackGraphic}}}" alt="{{{feedbackGraphicAlt}}}" title="{{{feedbackGraphicTitle}}}"/>
         </div>
+		{{/if}}
         <div class="tutor-inner">
                 {{#if feedbackTitle}}
                 <div class="tutor-title">

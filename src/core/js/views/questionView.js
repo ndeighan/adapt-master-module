@@ -9,7 +9,7 @@ define(function(require) {
     var Handlebars = require('handlebars');
     var ComponentView = require('coreViews/componentView');
     var Adapt = require('coreJS/adapt');
-
+	
     var QuestionView = ComponentView.extend({
     
         className: function() {
@@ -24,10 +24,13 @@ define(function(require) {
         },
         
         preRender: function() {
+			this.setupLinkedQu();
             this.setupDefaultSettings();
             this.resetQuestion({resetAttempts:true, initialisingScreen:true});
             this.listenTo(this.model, 'change:_isEnabled', this.onEnabledChanged);
         },
+		
+		
         
         isCorrect: function() {
             return !!Math.floor(this.model.get('_numberOfCorrectAnswers') / this.model.get('_items').length);
@@ -60,6 +63,7 @@ define(function(require) {
                 }
             }
         },
+		
     
         getOptionSpecificAudio: function() {
             return this.getSelectedItems().audio;
@@ -172,10 +176,19 @@ define(function(require) {
             this.showModelAnswer();
         },
         
+	
         onQuestionCorrect: function() {
+
             this.onComplete({correct: true});
             this.model.getParent("article").attributes.score ++;
-            this.model.set({"feedbackTitle": this.model.get('title'), "feedbackMessage": this.model.get("_feedback").correct});
+            this.model.set({"feedbackTitle": this.model.get('title'), 
+			"feedbackMessage": this.model.get("_feedback").correct,
+			"feedbackGraphic": this.model.get("_feedbackgraphic").correct,
+			"feedbackGraphicAlt": this.model.get("_feedbackgraphicalt").correct,
+			"feedbackGraphicTitle": this.model.get("_feedbackgraphictitle").correct,
+			"feedbackAudioMp3": this.model.get("_feedbackaudiosrcmp3").correct,
+			"feedbackAudioOgg": this.model.get("_feedbackaudiosrcogg").correct
+			});
         },
         
         onQuestionIncorrect: function() {
@@ -183,24 +196,44 @@ define(function(require) {
                 if (this.model.get('_attemptsLeft') === 0 || !this.model.get('_feedback')._partlyCorrect.notFinal) {
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
-                        "feedbackMessage": this.model.get('_feedback')._partlyCorrect.final
+                        "feedbackMessage": this.model.get('_feedback')._partlyCorrect.final,
+						"feedbackGraphic": this.model.get('_feedbackgraphic')._partlyCorrect.final,
+						"feedbackGraphicAlt": this.model.get('_feedbackgraphicalt')._partlyCorrect.final,
+						"feedbackGraphicTitle": this.model.get('_feedbackgraphictitle')._partlyCorrect.final,
+						"feedbackAudioMp3": this.model.get('_feedbackaudiosrcmp3')._partlyCorrect.final,
+						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._partlyCorrect.final
                     });
                 } else {
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
-                        "feedbackMessage": this.model.get('_feedback')._partlyCorrect.notFinal
+                        "feedbackMessage": this.model.get('_feedback')._partlyCorrect.notFinal,
+						"feedbackGraphic": this.model.get('_feedbackgraphic')._partlyCorrect.notFinal,
+						"feedbackGraphicAlt": this.model.get('_feedbackgraphicalt')._partlyCorrect.notFinal,
+						"feedbackGraphicTitle": this.model.get('_feedbackgraphictitle')._partlyCorrect.notFinal,
+						"feedbackAudioMp3": this.model.get('_feedbackaudiosrcmp3')._partlyCorrect.notFinal,
+						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._partlyCorrect.notFinal
                     });
                 }
             } else {
                 if (this.model.get('_attemptsLeft') === 0 || !this.model.get('_feedback')._incorrect.notFinal) {
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
-                        "feedbackMessage": this.model.get('_feedback')._incorrect.final
+                        "feedbackMessage": this.model.get('_feedback')._incorrect.final,
+						"feedbackGraphic": this.model.get('_feedbackgraphic')._incorrect.final,
+						"feedbackGraphicAlt": this.model.get('_feedbackgraphicalt')._incorrect.final,
+						"feedbackGraphicTitle": this.model.get('_feedbackgraphictitle')._incorrect.final,
+						"feedbackAudioMp3": this.model.get('_feedbackaudiosrcmp3')._incorrect.final,
+						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.final
                     });
                 } else {
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
-                        "feedbackMessage": this.model.get('_feedback')._incorrect.notFinal
+                        "feedbackMessage": this.model.get('_feedback')._incorrect.notFinal,
+						"feedbackGraphic": this.model.get('_feedbackgraphic')._incorrect.notFinal,
+						"feedbackGraphicAlt": this.model.get('_feedbackgraphicalt')._incorrect.notFinal,
+						"feedbackGraphicTitle": this.model.get('_feedbackgraphictitle')._incorrect.notFinal,
+						"feedbackAudioMp3": this.model.get('_feedbackaudiosrcmp3')._incorrect.notFinal,
+						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.notFinal
                     });
                 }
             }
