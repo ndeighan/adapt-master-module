@@ -2,7 +2,6 @@
     "dependencies": {
         "adapt-theme-tccs": "*",
         "adapt-contrib-text": "*",
-        "adapt-contrib-narrative": "*",
         "adapt-contrib-media": "*",
         "adapt-contrib-hotgraphic": "*",
         "adapt-contrib-blank": "*",
@@ -19,6 +18,9 @@
         "adapt-contrib-spoor": "*",
         "adapt-contrib-pageLevelProgress": "*",
         "adapt-contrib-resources": "*",
-        "adapt-contrib-slider": "*"
+        "adapt-contrib-slider": "*",
+        "adapt-contrib-narrative": "*",
+        "adapt-narrativeWithAudio": "*",
+        "adapt-narrativeWithAudio-master": "*"
     }
 }

@@ -7,8 +7,27 @@ define(function(require) {
 
     var ComponentView = require("coreViews/componentView");
     var Adapt = require("coreJS/adapt");
+	
+	function aud_play_pause() {
+  								var myAudio = document.getElementById("myAudio");
+  								if (myAudio.paused) {
+    								myAudio.play();
+ 								} else {
+   							 		myAudio.pause();
+  								}
+							}
 
     var Narrative = ComponentView.extend({
+		stopAllAudios: function() {
+      			document.getElementById("myAudio", function(audio) {
+        		if (!audio.paused) {
+          			audio.pause();
+        		}
+        		if (audio.currentTime != 0) {
+          			audio.currentTime = 0.0;
+        		}
+      			}, this);
+    		},
  
         events: {
             'touchstart .narrative-slider':'onTouchNavigationStarted',
@@ -127,6 +146,10 @@ define(function(require) {
             this.$('.narrative-popup').addClass('narrative-hidden');
             
             this.evaluateCompletion();*/
+			
+			//close any playing audio
+		
+			
         },
 
 
@@ -255,8 +278,12 @@ define(function(require) {
             
             if ($(event.currentTarget).hasClass('narrative-control-right')) {
                 stage++;
+				this.stopAllAudios();
+				//add stop audio
             } else if ($(event.currentTarget).hasClass('narrative-control-left')) {
                 stage--;
+				this.stopAllAudios();
+				//add stop audio
             }
             stage = (stage + numberOfItems) % numberOfItems;
             this.setStage(stage);
@@ -296,7 +323,7 @@ define(function(require) {
         }
         
     });
-    
+
     Adapt.register("narrative", Narrative);
     
     return Narrative;

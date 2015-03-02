@@ -9,28 +9,16 @@
         "displayTitle": "Narrative",
         "body": "This is optional body text. Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
         "instruction": "",
+        "_hasNavigationInTextArea": false,
         "_items": [
             {
                 "title": "Narrative stage 1 title",
                 "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
                 "_graphic": {
-                    "src": "course/en/images/narrative_1.png",
+                    "src": "course/en/images/image-slider-1.jpg",
                     "alt": "First graphic",
                     "title": "Second graphic"
                 },
-               "_audio": {
-                   "src": "course/en/audio/Bronze",
-                   "type": [
-                    {
-                      "type": "ogg",
-                      "codec": "audio/ogg"
-                    },
-                    {
-                      "type": "mp3",
-                      "codec": "audio/mpeg"
-                    }
-                        ]
-                    },
                 "strapline": "Here is the first..."
             },
             {
