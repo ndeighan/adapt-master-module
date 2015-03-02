@@ -1,7 +1,7 @@
 .mcq-component {
 
     .mcq-item {
-        background-color:@item-color;
+        background-color:@secondary-color;
         position: relative;
     }
 
@@ -12,7 +12,7 @@
         margin-bottom: 2px;
         position: relative;
         z-index: 1;
-        background-color: @item-color;
+        background-color: @secondary-color;
         overflow:hidden;
         
         .mcq-answer-icon{
@@ -24,7 +24,7 @@
 
         &.selected {            
             color:@item-text-selected-color;
-            background-color:@item-selected-color;
+            background-color:#3fb8fb;
             border-color:@item-border-selected-color;
             .mcq-answer-icon{
                 &:before {
@@ -97,12 +97,12 @@
         &.disabled {
             .mcq-item label.selected.disabled {
                 color:@item-text-selected-color;
-                background-color:@item-selected-color;
+                background-color:#3fb8fb;
                 border-color:@item-border-selected-color;
             }
             .mcq-item label.disabled {
-                color:@item-text-disabled-color;
-                background-color:@item-disabled-color;
+                color:@primary-color;
+                background-color:@secondary-color;
                 border-color:@item-border-disabled-color;
             }
 
@@ -123,8 +123,8 @@
         .mcq-widget {
             &:not(.disabled) {
                 .mcq-item label:hover {
-                    color:@item-text-hover-color;
-                    background-color:@item-hover-color;
+                    color:#fff;
+                    background-color:#3fb8fb;
                     border-color:@item-border-hover-color;
                 }
                 .mcq-item label.disabled {
