@@ -101,8 +101,28 @@
         "_parentId": "a-08",
         "_type": "block",
         "_classes": "",
-        "title": "Chapter 4",
-        "displayTitle": "Container 8",
+        "title": "Chapter 4a",
+        "displayTitle": "Container 8a",
+        "body": "",
+        "_trackingId": 7
+    },
+    {
+        "_id": "b-41",
+        "_parentId": "a-08",
+        "_type": "block",
+        "_classes": "",
+        "title": "Chapter 4b",
+        "displayTitle": "Container 8b",
+        "body": "",
+        "_trackingId": 7
+    },
+    {
+        "_id": "b-42",
+        "_parentId": "a-08",
+        "_type": "block",
+        "_classes": "",
+        "title": "Chapter 4b",
+        "displayTitle": "Container 8c",
         "body": "",
         "_trackingId": 7
     }

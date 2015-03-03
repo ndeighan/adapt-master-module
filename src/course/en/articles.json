@@ -81,6 +81,22 @@
 	    "_classes":"",
 	    "title":"Chapter 4",
 	    "displayTitle":"Page 1",
-	    "body":""
-	    }
+	    "body":"",
+            "_type":"article",
+    "_classes":"",
+    "title":"",
+    "body":"",
+    "_blockSlider":{
+        "_arrows": {
+            "_isActive": true
+        },
+        "_tabs": {
+            "_isActive": true,
+            "_useBlockTitle": false
+        },
+        "_initial": 1,
+        "_height": 600
+    }
+}
+
 ]
