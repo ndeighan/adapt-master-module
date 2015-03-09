@@ -3,122 +3,38 @@
 {  
   "_id":"c-05",
   "_parentId":"b-05",
-	"_type":"component",
-	"_component":"mcq",
-	"_classes":"",
-	"_layout":"left",
-	"_attempts":1,
-	"_questionWeight":1,
-	"_isRandom":false,
-	"_selectable":1,
-	"title": "MCQ",
-	"displayTitle": "MCQ",
-	"body": "Which of the following options would you consider to be correct?",
-	"instruction": "",
-	"_items": [
-		{
-			"text": "This is option 1.",
-			"_shouldBeSelected":true
-		},
-		{
-			"text": "This is option 2.",
-			"_shouldBeSelected":false
-		},
-		{
-			"text": "This is option 3.",
-			"_shouldBeSelected":false
-		}
-	],
-    "_feedback":{
-        "correct":"Congratulations, this is the correct feedback.",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
-      }
-	},
-        "_graphic": {
-        "src": "course/en/images/allison.png",
-        "alt": "alt text",
-        "title": "title"
-      },
-    "_media": {
-        "mp3": "course/en/audio/Bronze.mp3",
-        "ogg": "course/en/audio/Bronze.ogg"
-    },
-	"_buttons":{
-		"submit":"",
-		"reset":"",
-		"showCorrectAnswer":"",
-		"hideCorrectAnswer":""
-	},
-    "_pageLevelProgress": {
-        "_isEnabled": true
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 1",
+  "displayTitle":"Component 1 Title",
+  "body":"Component 1 text.",
+  "_pageLevelProgress": {
+      "_isEnabled": true
     }
 }, 
 
 {
   "_id":"c-10",
   "_parentId":"b-10",
-        "_classes": "",
-        "_type":"component",
-        "_layout": "full",
-        "_component": "narrative",
-        "title": "Narrative",
-        "displayTitle": "Narrative",
-        "body": "This is optional body text. Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
-        "instruction": "",
-        "_items": [
-            {
-                "title": "Narrative stage 1 title",
-                "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
-                "_graphic": {
-                    "src": "course/en/images/narrative_1.png",
-                    "alt": "First graphic",
-                    "title": "Second graphic"
-                },
-				"audioSrc": "course/en/audio/Bronze",
-     			"audioTypes": [
-        			{"type":"ogg", "codec": "audio/ogg"},
-        			{"type": "mp3", "codec": "audio/mpeg"}
-      			],
-                "strapline": "Here is the first..."
-            },
-            {
-                "title": "Narrative stage 2 title",
-                "body": "This is display text 2.",
-                "_graphic": {
-                    "src": "course/en/images/narrative_2.png",
-                    "alt": "Second graphic",
-                    "title": "Second graphic"
-                },
-               "audioSrc": "course/en/audio/Silver",
-     			"audioTypes": [
-        			{"type":"ogg", "codec": "audio/ogg"},
-        			{"type": "mp3", "codec": "audio/mpeg"}
-      			],
-                "strapline": "Now comes the second..."
-            },
-            {
-                "title": "Narrative stage 3 title",
-                "body": "This is display text 3.",
-                "_graphic": {
-                    "src": "course/en/images/narrative_3.png",
-                    "alt": "Third graphic",
-                    "title": "Third graphic"
-                },
-               "audioSrc": "course/en/audio/Gold",
-     			"audioTypes": [
-        			{"type":"ogg", "codec": "audio/ogg"},
-        			{"type": "mp3", "codec": "audio/mpeg"}
-      			],
-                "strapline": "Third here!"
-            }
-        ]
+  "_type":"component",
+  "_component":"text",
+  "_classes":"",
+  "_layout":"full",
+  "title":"Component 2",
+  "displayTitle":"Component 2 Title",
+  "body":"Component 2 text.",
+    "triggered": {
+	"top": 30,
+	"left": 30,
+	"showButtonText": "Click me to show",
+	"hideButtonText": "Click me to hide"
     },
+  "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+},
   
 {
   "_id":"c-15",
@@ -133,17 +49,6 @@
   "_pageLevelProgress": {
       "_isEnabled": true
     }
-},
-    
-{
-  "_id":"c-19",
-  "_parentId":"b-19",
-  "_type":"component",
-  "_component":"targetPage",
-  "_classes":"",
-  "_layout":"full",
-    "linkText":"Next Chapter",
-    "targetId": "co-02"
 },
     
 {
@@ -253,17 +158,6 @@
 },
     
 {
-  "_id":"c-34",
-  "_parentId":"b-34",
-  "_type":"component",
-  "_component":"targetPage",
-  "_classes":"",
-  "_layout":"full",
-    "linkText":"Next Chapter",
-    "targetId": "co-03"
-},
-    
-{
   "_id":"c-35",
   "_parentId":"b-35",
   "_type":"component",
@@ -276,17 +170,6 @@
   "_pageLevelProgress": {
       "_isEnabled": true
   }
-},
-    
-{
-  "_id":"c-39",
-  "_parentId":"b-39",
-  "_type":"component",
-  "_component":"targetPage",
-  "_classes":"",
-  "_layout":"full",
-    "linkText":"Next Chapter",
-    "targetId": "co-04"
 },
     
 {

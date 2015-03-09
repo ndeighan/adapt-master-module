@@ -21,6 +21,7 @@
         "adapt-contrib-slider": "*",
         "adapt-contrib-narrative": "*",
         "adapt-narrativeWithAudio": "*",
-        "adapt-narrativeWithAudio-master": "*"
+        "adapt-narrativeWithAudio-master": "*",
+        "adapt-contrib-triggered": "*"
     }
 }
