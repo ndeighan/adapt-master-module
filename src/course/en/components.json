@@ -3,15 +3,112 @@
 {  
   "_id":"c-05",
   "_parentId":"b-05",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 1",
-  "displayTitle":"Component 1 Title",
-  "body":"Component 1 text.",
-  "_pageLevelProgress": {
-      "_isEnabled": true
+    "_type":"component",
+	"_component":"mcq",
+	"_classes":"",
+	"_layout":"full",
+	"_attempts":1,
+	"_questionWeight":1,
+	"_isRandom":false,
+	"_selectable":1,
+	"title": "MCQ",
+	"displayTitle": "",
+	"body": "Which of the following options would you consider to be correct?",
+	"instruction": "",
+	"_items": [
+		{
+			"text": "This is option 1.",
+			"_shouldBeSelected":true
+		},
+		{
+			"text": "This is option 2.",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "This is option 3.",
+			"_shouldBeSelected":false
+		}
+	],
+    "_feedback":{
+        "correct":"Congratulations, this is the correct feedback.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered the question incorrectly."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered part of the question correctly."
+      }
+	},	
+	"_feedbackgraphic":{
+        "correct":"course/en/images/allison.png",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+      }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+      }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+      }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/Gold.mp3",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.mp3"
+      }
+	},
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/Gold.ogg",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.ogg"
+      }
+	},
+	"_buttons":{
+		"submit":"",
+		"reset":"",
+		"showCorrectAnswer":"",
+		"hideCorrectAnswer":""
+	},
+    "triggered": {
+	"top": 5,
+	"left": 5,
+	"showButtonText": "",
+	"hideButtonText": ""
+    },
+    "_pageLevelProgress": {
+        "_isEnabled": true
     }
 }, 
 
@@ -26,10 +123,10 @@
   "displayTitle":"Component 2 Title",
   "body":"Component 2 text.",
     "triggered": {
-	"top": 30,
-	"left": 30,
-	"showButtonText": "Click me to show",
-	"hideButtonText": "Click me to hide"
+	"top": 5,
+	"left": 5,
+	"showButtonText": "",
+	"hideButtonText": ""
     },
   "_pageLevelProgress": {
       "_isEnabled": true

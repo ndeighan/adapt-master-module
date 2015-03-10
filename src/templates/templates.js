@@ -2238,8 +2238,13 @@ function program1(depth0,data) {
 
 function program3(depth0,data) {
   
-  
-  return "<span class='icon icon-plus'></span>";
+  var buffer = "", stack1, helper;
+  buffer += "<span id=\"";
+  if (helper = helpers._id) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0._id); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + "\" class='icon icon-plus'></span>";
+  return buffer;
   }
 
   buffer += "\n<a href=\"#\" class='triggered-button-show' data-id=\"";

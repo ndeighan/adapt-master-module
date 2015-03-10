@@ -4453,10 +4453,10 @@ override the defaults and extend as i see fit.
     .icon {
         padding:@item-padding;
         color:@item-text-color;
-        background-color:@item-color;
+        background-color:@secondary-color;
         &:hover {
-            color:@item-text-hover-color;
-            background-color:@item-hover-color;
+            color:@primary-color;
+            background-color:#3fb8fb;
         }
     }
 }
@@ -4470,8 +4470,8 @@ override the defaults and extend as i see fit.
 .triggered-button-hide {
     display:block;
     position:absolute;
-    right:-(@icon-size/2);
-    top:-(@icon-size/2);
+    right: 0px;
+    top: 0px;
     text-decoration: none;
     .triggered-icon-colors;
 }

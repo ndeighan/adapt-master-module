@@ -24,7 +24,6 @@ define(function(require) {
         },
         
         preRender: function() {
-			this.setupLinkedQu();
             this.setupDefaultSettings();
             this.resetQuestion({resetAttempts:true, initialisingScreen:true});
             this.listenTo(this.model, 'change:_isEnabled', this.onEnabledChanged);

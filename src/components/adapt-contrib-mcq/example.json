@@ -4,7 +4,7 @@
 	"_type":"component",
 	"_component":"mcq",
 	"_classes":"",
-	"_layout":"right",
+	"_layout":"left",
 	"_attempts":1,
 	"_questionWeight":1,
 	"_isRandom":false,
@@ -37,16 +37,62 @@
             "notFinal": "",
             "final": "This feedback will appear if you answered part of the question correctly."
       }
+	},	
+	"_feedbackgraphic":{
+        "correct":"course/en/images/allison.png",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+      }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+      }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+      }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/Gold.mp3",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.mp3"
+      }
 	},
-    "_graphic": {
-        "src": "course/en/images/image.png",
-        "alt": "alt text",
-        "title": "title"
-      },
-    "_media": {
-        "mp3": "course/en/audio/audio.mp3",
-        "ogg": "course/en/audio/audio.ogg"
-    },
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/Gold.ogg",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.ogg"
+      }
+	},
 	"_buttons":{
 		"submit":"",
 		"reset":"",
