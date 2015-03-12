@@ -2201,23 +2201,23 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "<span>";
+  buffer += "\n        <span>";
   stack1 = ((stack1 = ((stack1 = (depth0 && depth0.triggered)),stack1 == null || stack1 === false ? stack1 : stack1.hideButtonText)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</span>";
+  buffer += "</span>\n    ";
   return buffer;
   }
 
 function program3(depth0,data) {
   
   
-  return "<span class='icon icon-cross'></span>";
+  return "\n        <span class='icon icon-cross'></span>\n    ";
   }
 
-  buffer += "\n<a href=\"#\" class='triggered-button-hide'>";
+  buffer += "\n<a href=\"#\" class='triggered-button-hide'>\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0.triggered)),stack1 == null || stack1 === false ? stack1 : stack1.hideButtonText), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</a>\n";
+  buffer += "\n</a>\n";
   return buffer;
   });
 
@@ -2229,21 +2229,21 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "<span>";
+  buffer += "\n        <span>";
   stack1 = ((stack1 = ((stack1 = (depth0 && depth0.triggered)),stack1 == null || stack1 === false ? stack1 : stack1.showButtonText)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</span>";
+  buffer += "</span>\n    ";
   return buffer;
   }
 
 function program3(depth0,data) {
   
   var buffer = "", stack1, helper;
-  buffer += "<span id=\"";
-  if (helper = helpers._id) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0._id); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += "\n        <span id=\"";
+  if (helper = helpers._revealId) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0._revealId); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "\" class='icon icon-plus'></span>";
+    + "\" class='icon icon-plus'></span>\n    ";
   return buffer;
   }
 
@@ -2251,10 +2251,10 @@ function program3(depth0,data) {
   if (helper = helpers._id) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0._id); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "\">";
+    + "\">\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0.triggered)),stack1 == null || stack1 === false ? stack1 : stack1.showButtonText), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</a>";
+  buffer += "\n</a>";
   return buffer;
   });
 

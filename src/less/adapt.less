@@ -4447,16 +4447,20 @@ override the defaults and extend as i see fit.
 
 .triggered-component, .triggered-container {
     position:relative;
+    padding-top: 20px;
+    z-index: 10;
 }
 
 .triggered-icon-colors {
     .icon {
+        display: inline;
         padding:@item-padding;
         color:@item-text-color;
         background-color:@secondary-color;
         &:hover {
             color:@primary-color;
             background-color:#3fb8fb;
+            
         }
     }
 }
@@ -4470,13 +4474,17 @@ override the defaults and extend as i see fit.
 .triggered-button-hide {
     display:block;
     position:absolute;
-    right: 0px;
-    top: 0px;
+    left: 5px;
+    top: -15px;
     text-decoration: none;
     .triggered-icon-colors;
 }
 
 .triggered-hidden {
+    visibility: hidden;
+}
+
+.hide-icon {
     visibility: hidden;
 }
 .extension-tutor {

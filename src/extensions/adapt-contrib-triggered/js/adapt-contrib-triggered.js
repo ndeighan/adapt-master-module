@@ -21,8 +21,8 @@ define(function(require) {
             },
 
             events: {
-                'click .triggered-button-show': 'show',
-                'click .triggered-button-hide': 'hide'
+                'click .triggered-button-show': 'show',               
+                'click .triggered-button-hide': 'hide',
             },
 
             render: function() {
@@ -41,16 +41,12 @@ define(function(require) {
             show: function(event) {
                 event.preventDefault();
                 $('.' + $(event.currentTarget).attr('data-id')).removeClass('triggered-hidden');
-                var d = document.getElementById("show-icon-target");
-                d.className = d.className + " triggered-hidden";
             },
 
             hide: function(event) {
                 event.preventDefault();
                 view.$el.addClass('triggered-hidden');
-                document.getElementById("show-icon-target").className = document.getElementById("show-icon-target").className.replace( /(?:^|\s)triggered-hidden(?!\S)/g , '' )
-                
-            }
+            },
 
         });
 
