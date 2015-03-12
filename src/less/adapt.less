@@ -4121,23 +4121,55 @@ override the defaults and extend as i see fit.
 }
   .targetPage-component {
         width: 100%;
-        text-align: center;      
+        text-align: center; 
+        -webkit-border-top-left-radius: 100px;
+        -webkit-border-top-right-radius: 100px;
+        -moz-border-radius-topleft: 100px;
+        -moz-border-radius-topright: 100px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px; 
+        position: fixed;
+        z-index: 500; 
+        bottom: 0; 
+        left: 40%;
+        width: 20%;
+        outline: none;
+        text-decoration: none;
+        background-color: #3fb8fb;
+        color: @item-text-color;
+        padding: @item-padding;
+     
       
 		a {
             text-decoration: none;
-			background-color:#333;
+			background-color:#3fb8fb;
 			color:@button-text-color;
         
-			&:hover {
-				background-color:@button-hover-color;
-				color:@button-text-hover-color;
-			}
+                &:hover {
+                -webkit-border-top-left-radius: 100px;
+                -webkit-border-top-right-radius: 100px;
+                -moz-border-radius-topleft: 100px;
+                -moz-border-radius-topright: 100px;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px; 
+                position: fixed;
+                z-index: 500; 
+                bottom: 0; 
+                left: 40%;
+                width: 20%;
+                outline: none;
+                text-decoration: none;
+                color: @item-text-color;
+                padding: @item-padding;
+                background-color:@item-hover-color;
+                color:@primary-color;
+                }
 			
-			&.visited {
-				background-color:@button-disabled-color;
-				color:@button-text-disabled-color;
-			}
-    }
+                &.visited {
+                    background-color:@button-disabled-color;
+                    color:@button-text-disabled-color;
+                }
+        }
   }
 .blank-component {
   .webObject-inner {
