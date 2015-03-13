@@ -1868,7 +1868,7 @@ function program20(depth0,data) {
   buffer += "\n                            <a href=\"#\" class=\"narrativeWithAudio-popup-close\">\n                                <div class=\"icon icon-cross\"></div>\n                            </a>\n                        </div>\n                    </div>\n                    ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.items), {hash:{},inverse:self.noop,fn:self.program(13, program13, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </div>\n            </div>\n  \n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-left\">\n                <div class=\"icon icon-controls-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-right\">\n                <div class=\"icon icon-controls-right\"></div>\n            </a>\n            \n            <div class=\"narrativeWithAudio-slider clearfix\">\n                ";
+  buffer += "\n                </div>\n            </div>\n  \n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-left\">\n                <div class=\"icon icon-chevron-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-right\">\n                <div class=\"icon icon-chevron-right\"></div>\n            </a>\n            \n            <div class=\"narrativeWithAudio-slider clearfix\">\n                ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.items), {hash:{},inverse:self.noop,fn:self.program(15, program15, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n            </div>\n            <div class=\"narrativeWithAudio-indicators\">\n                ";
@@ -1981,7 +1981,7 @@ function program5(depth0,data) {
 function program7(depth0,data) {
   
   
-  return "\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-left blockslider-hidden\">\n            <div class=\"icon icon-controls-left\"></div>\n        </a>\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-right blockslider-hidden\">\n            <div class=\"icon icon-controls-right\"></div>\n        </a>\n    ";
+  return "\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-left blockslider-hidden\">\n            <div class=\"icon icon-chevron-left\"></div>\n        </a>\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-right blockslider-hidden\">\n            <div class=\"icon icon-chevron-right\"></div>\n        </a>\n    ";
   }
 
   buffer += "\n<div class=\"article-body\">\n<div class=\"blockslider-controls-container\">\n    ";
