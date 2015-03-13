@@ -1,4 +1,23 @@
 [
+    
+{
+  "_id":"c-01",
+  "_parentId":"b-05",
+  "_type":"component",
+  "_component":"webObject",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Insert a Web Object",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_webObject": {
+            "type": "text/html",
+            "data": "course/en/embed/web/functionality_test.html",
+            "width": "100%",
+            "height": "300px"
+        }
+},    
 
 {  
   "_id":"c-05",
@@ -101,9 +120,8 @@
 		"showCorrectAnswer":"",
 		"hideCorrectAnswer":""
 	},
-    "_revealId": "r-01",
     "triggered": {
-	"top": 5,
+	"top": 80,
 	"left": 5,
 	"showButtonText": "",
 	"hideButtonText": ""

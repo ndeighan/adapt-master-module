@@ -9,7 +9,7 @@
         "body":"",
         "_trickle": {
 	        "_isEnabled": true,
-	        "button": "Continue"
+	        "button": ""
 	    }
     },
     {
@@ -42,7 +42,7 @@
         "body":"",
         "_trickle": {
 	        "_isEnabled": true,
-	        "button": "Continue"
+	        "button": ""
 	    }
     },
 	{

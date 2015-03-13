@@ -2183,10 +2183,10 @@ function program1(depth0,data) {
 function program3(depth0,data) {
   
   
-  return "\n      Continue\n    ";
+  return "\n\n    ";
   }
 
-  buffer += "\n<a href=\"#\" class=\"trickle-button\">\n  <h6>\n    ";
+  buffer += "\n<a href=\"#\" class=\"trickle-button icon icon-chevron-down\">\n  <h6>\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._trickle)),stack1 == null || stack1 === false ? stack1 : stack1.button), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n  </h6>\n</a>\n";
@@ -2210,8 +2210,9 @@ function program1(depth0,data) {
 
 function program3(depth0,data) {
   
-  
-  return "\n        <span class='icon icon-cross'></span>\n    ";
+  var buffer = "";
+  buffer += "\n        \n    ";
+  return buffer;
   }
 
   buffer += "\n<a href=\"#\" class='triggered-button-hide'>\n    ";
@@ -2238,13 +2239,8 @@ function program1(depth0,data) {
 
 function program3(depth0,data) {
   
-  var buffer = "", stack1, helper;
-  buffer += "\n        <span id=\"";
-  if (helper = helpers._revealId) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0._revealId); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\" class='icon icon-plus'></span>\n    ";
-  return buffer;
+  
+  return "\n        <span class='icon icon-question'></span>\n    ";
   }
 
   buffer += "\n<a href=\"#\" class='triggered-button-show' data-id=\"";
