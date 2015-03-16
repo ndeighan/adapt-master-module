@@ -22,7 +22,7 @@ define(function(require) {
 
             events: {
                 'click .triggered-button-show': 'show',               
-                'click .triggered-button-hide': 'hide',
+//              'click .triggered-button-hide': 'hide',
             },
 
             render: function() {
@@ -43,11 +43,11 @@ define(function(require) {
                 $('.' + $(event.currentTarget).attr('data-id')).removeClass('triggered-hidden');
             },
 
-            hide: function(event) {
-                event.preventDefault();
-                view.$el.addClass('triggered-hidden');
-            },
-
+/*            hide: function(event) {
+*                event.preventDefault();
+*                view.$el.addClass('triggered-hidden');
+*            },
+*/
         });
 
         new TriggeredView({model: view.model});

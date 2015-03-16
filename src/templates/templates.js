@@ -1151,7 +1151,7 @@ function program14(depth0,data) {
   buffer += "\n    <div class=\"media-widget component-widget\">\n\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._media)),stack1 == null || stack1 === false ? stack1 : stack1.mp3), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n	<div class=\"vidtext\">\n		<p>Select the play button to start the video.</p>\n	</div>\n    ";
+  buffer += "\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._media)),stack1 == null || stack1 === false ? stack1 : stack1.transcriptLink), {hash:{},inverse:self.noop,fn:self.program(11, program11, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n    </div>\n</div>";
@@ -1267,7 +1267,7 @@ function program14(depth0,data,depth1) {
   buffer += "\">\n        \n        <div class=\"narrative-strapline\">\n            <div class=\"narrative-strapline-header\">\n                <div class=\"narrative-strapline-header-inner clearfix\">\n                    ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </div>\n            </div>\n            <a href=\"#\" class=\"narrative-popup-open\" tabindex=\"-1\">\n                <div class=\"icon icon-plus\"></div>\n            </a>\n        </div>\n        \n        <div class=\"narrative-slide-container\">\n  \n            <a href=\"#\" class=\"narrative-controls narrative-control-left\">\n                <div class=\"icon icon-controls-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrative-controls narrative-control-right\">\n                <div class=\"icon icon-controls-right\"></div>\n            </a>\n            \n            <div class=\"narrative-slider clearfix\">\n                ";
+  buffer += "\n                </div>\n            </div>\n            <a href=\"#\" class=\"narrative-popup-open\" tabindex=\"-1\">\n                <div class=\"icon icon-plus\"></div>\n            </a>\n        </div>\n        \n        <div class=\"narrative-slide-container\">\n  \n            <a href=\"#\" class=\"narrative-controls narrative-control-left\">\n                <div class=\"icon icon-chevron-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrative-controls narrative-control-right\">\n                <div class=\"icon icon-chevron-right\"></div>\n            </a>\n            \n            <div class=\"narrative-slider clearfix\">\n                ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(5, program5, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n            </div>\n            <div class=\"narrative-indicators\">\n                ";
@@ -1868,7 +1868,7 @@ function program20(depth0,data) {
   buffer += "\n                            <a href=\"#\" class=\"narrativeWithAudio-popup-close\">\n                                <div class=\"icon icon-cross\"></div>\n                            </a>\n                        </div>\n                    </div>\n                    ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.items), {hash:{},inverse:self.noop,fn:self.program(13, program13, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </div>\n            </div>\n  \n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-left\">\n                <div class=\"icon icon-controls-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-right\">\n                <div class=\"icon icon-controls-right\"></div>\n            </a>\n            \n            <div class=\"narrativeWithAudio-slider clearfix\">\n                ";
+  buffer += "\n                </div>\n            </div>\n  \n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-left\">\n                <div class=\"icon icon-chevron-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrativeWithAudio-controls narrativeWithAudio-control-right\">\n                <div class=\"icon icon-chevron-right\"></div>\n            </a>\n            \n            <div class=\"narrativeWithAudio-slider clearfix\">\n                ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.items), {hash:{},inverse:self.noop,fn:self.program(15, program15, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n            </div>\n            <div class=\"narrativeWithAudio-indicators\">\n                ";
@@ -1981,7 +1981,7 @@ function program5(depth0,data) {
 function program7(depth0,data) {
   
   
-  return "\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-left blockslider-hidden\">\n            <div class=\"icon icon-controls-left\"></div>\n        </a>\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-right blockslider-hidden\">\n            <div class=\"icon icon-controls-right\"></div>\n        </a>\n    ";
+  return "\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-left blockslider-hidden\">\n            <div class=\"icon icon-chevron-left\"></div>\n        </a>\n        <a href=\"#\" class=\"blockslider-controls blockslider-control-right blockslider-hidden\">\n            <div class=\"icon icon-chevron-right\"></div>\n        </a>\n    ";
   }
 
   buffer += "\n<div class=\"article-body\">\n<div class=\"blockslider-controls-container\">\n    ";
@@ -2183,10 +2183,10 @@ function program1(depth0,data) {
 function program3(depth0,data) {
   
   
-  return "\n      Continue\n    ";
+  return "\n\n    ";
   }
 
-  buffer += "\n<a href=\"#\" class=\"trickle-button\">\n  <h6>\n    ";
+  buffer += "\n<a href=\"#\" class=\"trickle-button icon icon-chevron-down\">\n  <h6>\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._trickle)),stack1 == null || stack1 === false ? stack1 : stack1.button), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n  </h6>\n</a>\n";
@@ -2210,8 +2210,9 @@ function program1(depth0,data) {
 
 function program3(depth0,data) {
   
-  
-  return "\n        <span class='icon icon-cross'></span>\n    ";
+  var buffer = "";
+  buffer += "\n        \n    ";
+  return buffer;
   }
 
   buffer += "\n<a href=\"#\" class='triggered-button-hide'>\n    ";
@@ -2238,13 +2239,8 @@ function program1(depth0,data) {
 
 function program3(depth0,data) {
   
-  var buffer = "", stack1, helper;
-  buffer += "\n        <span id=\"";
-  if (helper = helpers._revealId) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0._revealId); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\" class='icon icon-plus'></span>\n    ";
-  return buffer;
+  
+  return "\n        <span class='transparent-button'></span>\n    ";
   }
 
   buffer += "\n<a href=\"#\" class='triggered-button-show' data-id=\"";
