@@ -18,7 +18,7 @@
         "_type":"article",
         "_classes":"",
         "title":"Chapter 1",
-        "displayTitle":"Page 2",
+        "displayTitle":"",
         "body":"",
         "_trickle": true
     },
@@ -28,7 +28,7 @@
         "_type":"article",
         "_classes":"",
         "title":"Chapter 1",
-        "displayTitle":"Page 3",
+        "displayTitle":"",
         "body":"",
         "_trickle": true
     },
@@ -82,11 +82,7 @@
 	    "title":"Chapter 4",
 	    "displayTitle":"Page 1",
 	    "body":"",
-            "_type":"article",
-    "_classes":"",
-    "title":"",
-    "body":"",
-    "_blockSlider":{
+        "_blockSlider":{
         "_arrows": {
             "_isActive": true
         },
