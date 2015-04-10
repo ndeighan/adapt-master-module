@@ -189,7 +189,12 @@ define(function(require) {
 
                 this.$el.html(buttonView.$el).show();
                 this.$('.trickle-button').addClass('trickle-button-show');
-            },
+/*                if (){
+*                    $('.trickle-button').addClass('trickle-button-right'); 
+*               } else {
+*                   $('.trickle-button').addClass('trickle-button icon icon-chevron-down trickle-button-show'); 
+*                    }
+ */           },
 
             hideTrickle: function() {
                 this.$el.hide();
@@ -221,6 +226,7 @@ define(function(require) {
                 return this;
             }
         });
+        
 
         new TrickleView({model: pageModel});
     }

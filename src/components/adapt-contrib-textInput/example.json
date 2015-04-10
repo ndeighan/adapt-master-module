@@ -20,17 +20,6 @@
         "showCorrectAnswer":"MODEL ANSWER",
         "hideCorrectAnswer":"YOUR ANSWER"
     },
-    "_feedback": {
-        "correct": "This feedback will appear if you answered the question correctly.",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
-        }
-    },
     "_items": [
         {
             "prefix": "B:",
@@ -56,5 +45,70 @@
                 "four"
             ]
         }
-    ]
+    ],
+    "_feedback":{
+        "correct":"Congratulations, this is the correct feedback.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered the question incorrectly."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered part of the question correctly."
+      }
+	},	
+	"_feedbackgraphic":{
+        "correct":"course/en/images/allison.png",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+      }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+      }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+      }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/Gold.mp3",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.mp3"
+      }
+	},
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/Gold.ogg",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Bronze.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/Silver.ogg"
+      }
 }

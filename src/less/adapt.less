@@ -254,138 +254,9 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 	// Fix for iOS devices not displaying icons if hidden then shown
 	-webkit-transform: translateZ(0);
 }
-.menu-title, .menu-body{
-	color: @foreground-color;
-	margin-bottom:@menu-title-padding-bottom;
-}
-
-.menu {
-	background:@custom_boxmenu_bck_color;
-	.menu-container {
-		.responsive-large;
-		.responsive-medium;
-		.responsive-small;
-	}
-
-	.menu-container-inner {
-		padding:@menu-body-padding;
-	}
-
-	.menu-item {
-		.responsive-medium;
-		.responsive-small;
-		width:50%;
-		float:left;
-		margin-top:@menu-body-padding-bottom;
-		margin-bottom:20px;
-
-
-		&.nth-child-even{
-			.menu-item-inner{
-				margin-left:5%;
-			}
-		}
-
-		&.nth-child-odd{
-			clear: both;
-			
-			.menu-item-inner{
-				margin-right:5%;
-			}
-		}
-	}
-
-	.menu-item-inner{
-		background: @custom_quaternary_color;
-		padding-bottom:20px;
-	}
-	
-	.menu-item-title {
-		padding:@menu-body-padding;
-        font-size:21px;
-	}
-
-	.menu-item-body {
-		padding:@menu-body-padding;
-	}
-
-	.menu-item-button {
-		padding:@menu-body-padding;
-		
-		a {
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-			text-decoration: none;
-			background-color:@tccs-orange-color;
-			color:@button-text-color;
-			padding:@button-padding;
-			
-			&:hover {
-				background-color:@button-hover-color;
-				color:@button-text-hover-color;
-			}
-			
-			&.visited {
-				background-color:@button-disabled-color;
-				color:@button-text-disabled-color;
-			}
-		}
-	}
-
-	.menu-item-duration {
-		float:right;
-	}
-
-	.menu-item-progress {
-		padding:@menu-body-padding;
-	}
-
-	.menu-item-progress-indicator {
-		margin:0 auto;
-		width:100px;
-		height:8px;
-		border:@item-border;
-		border-radius:5px;
-		overflow:hidden;
-	}
-
-	.menu-item-progress-indicator-bar {
-		width:0%;
-		height:8px;
-		background-color:@primary-color;
-	}
-}
-
-
-
-@media all and (max-width:760px) {
-	.menu-title-inner{
-		padding:15px 0 0;
-	}
-
-	.menu-body-inner{
-		padding:0px 0 10px;
-	}
-
-   	.menu{
-
-   		.menu-inner {
-			padding:0;
-		}
-
-		.menu-item{
-			width:100%;
-			margin-bottom:20px;
-			
-			&.nth-child-even, &.nth-child-odd{
-				
-				.menu-item-inner{
-					margin:0;
-				}
-			}
-		}
-   	}
+.padding-none {
+	padding-top: 0px !important;
+	padding-bottom: 0px;
 }
 
 .accordionWithAudio-component {
@@ -551,22 +422,22 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 
     .narrative-control-left {
         left: 0;
-        -webkit-border-top-left-radius: 100px;
-        -webkit-border-bottom-left-radius: 100px;
-        -moz-border-radius-topleft: 100px;
-        -moz-border-radius-bottomleft: 100px;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-    }
-
-    .narrative-control-right {
-        right: 0;
         -webkit-border-top-right-radius: 100px;
         -webkit-border-bottom-right-radius: 100px;
         -moz-border-radius-topright: 100px;
         -moz-border-radius-bottomright: 100px;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
+    }
+
+    .narrative-control-right {
+        right: 0;
+        -webkit-border-top-left-radius: 100px;
+        -webkit-border-bottom-left-radius: 100px;
+        -moz-border-radius-topleft: 100px;
+        -moz-border-radius-bottomleft: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
 
     .narrative-strapline {
@@ -1439,7 +1310,8 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 .mcq-component {
 
     .mcq-item {
-        background-color:@secondary-color;
+        background-color:@inverted-foreground-color;
+        border-style: solid;
         position: relative;
     }
 
@@ -1448,13 +1320,25 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
         display:block;
         border:@item-border;
         margin-bottom: 2px;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        -moz-border-radius-bottomright: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; 
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; 
         position: relative;
         z-index: 1;
-        background-color: @secondary-color;
+        background-color: @inverted-foreground-color;
         overflow:hidden;
         
         .mcq-answer-icon{
-            color: @item-text-color;
+            color: #D6D6D6;
             &:before {
                 content: "\e65e";
             }
@@ -1540,7 +1424,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
             }
             .mcq-item label.disabled {
                 color:@primary-color;
-                background-color:@secondary-color;
+                background-color:@inverted-foreground-color;
                 border-color:@item-border-disabled-color;
             }
 
@@ -1699,6 +1583,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 	left: 0;
 	width: 100%;
 	height: 100%;
+    padding-bottom: 35px;
 }
 
 .mejs-poster {
@@ -2678,8 +2563,8 @@ div.mejs-speed-button {
     .narrative-content {
         float: left;
         width: 36%;
-        background: @inverted-background-color;
-        color: @inverted-foreground-color;
+        background: @inverted-foreground-color;
+        color: @foreground-color;
     }
 
     .narrative-content-inner {
@@ -3084,10 +2969,12 @@ div.mejs-speed-button {
     }
 
 }
-
+.center-text {
+    text-align: center;
+}
 .textinput-component {
     .textinput-item {
-        background-color: @item-color;
+        background-color: @inverted-foreground-color;
         padding: @item-padding;
         position:relative;
         border:@item-border;
@@ -3121,7 +3008,7 @@ div.mejs-speed-button {
     .textinput-widget {
         &.submitted {
             .textinput-item {
-                background-color: @item-disabled-color;
+                background-color: @inverted-foreground-color;
             }
         }
     
@@ -4327,13 +4214,19 @@ override the defaults and extend as i see fit.
 }
 
 .page-level-progress-indicator {
-	width: 16%;
-	height: 10px;
-    margin-left:4%;
-    display: inline-block;
-	border-radius:5px;
-	overflow:hidden;
-	background-color:@background-color;
+	width: 20px;
+    float: right;
+    .icon {
+        display:block;
+        width:@icon-size;
+        height:@icon-size;
+        font-size:@icon-size;
+        text-decoration:none;
+        color:@navigation-icon-color;
+        .no-touch &:hover {
+            color:@navigation-icon-hover-color;
+        }
+    }
 }
 
 .page-level-progress-indicator-complete {
@@ -4379,9 +4272,9 @@ override the defaults and extend as i see fit.
 .page-level-progress-navigation-completion {
     width: 100px;
     height: 8px;
-    background-color: (@background-color);
+    background-color: (@inverted-foreground-color);
     overflow: hidden;
-    border: 2px solid @background-color;
+    border: 2px solid #D6D6D6;
     position: relative;
     border-radius: 5px;
 }
@@ -4454,6 +4347,10 @@ override the defaults and extend as i see fit.
     padding: @item-padding;
   }
 
+  .trickle-button-right {
+    left: 70%;
+  }
+    
   .trickle-button-show {
     display:block;
     visibility:visible;
@@ -4523,15 +4420,26 @@ override the defaults and extend as i see fit.
 .transparent-button {
     position:absolute;
     height:50px;
-    width:70px;
+    width:100px;
     cursor:default;
 }
 .extension-tutor {
 
     .tutor {
         position: fixed;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        -moz-border-radius-bottomright: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; 
         top: 50%;
-        width:100%;
+        left: 25%;
+        width:50%;
         background-color: #f6f6f6;
         color: @foreground-color;
         z-index: 550;
@@ -4546,10 +4454,10 @@ override the defaults and extend as i see fit.
     .tutor-image {
         width:146px;
         height:150px;
-        padding-right:100px;
+        margin-left: auto;
+        margin-right: auto;
 		display:block;
         position: relative;
-		float: right;
         z-index: 560;
 	}
     .tutor-audio {
@@ -4565,8 +4473,12 @@ override the defaults and extend as i see fit.
     }
 
     .tutor-inner {
-        padding: 50px;
+        width: 80%;
+        padding-top: 10px;
         padding-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .tutor-toolbar {
@@ -4899,9 +4811,14 @@ h6 {
     height:@icon-size;
     font-size:@icon-size;
     text-decoration:none;
-    color:@foreground-color;
+    color:@navigation-icon-color;
 }
-
+.icon-lock:before {
+	content: "\f023";
+}
+.icon-unlock:before {
+	content: "\f09c";
+}
 .icon-chevron-right:before {
 	content: "\f054";
 }
@@ -5398,7 +5315,7 @@ h6 {
 // ============
 
 .page {
-    background-color: #fff;
+    background-color: #f9f9f9;
     .page-inner {
     }  
     .page-title {
@@ -5522,13 +5439,13 @@ h6 {
 //end define of custom colors
 
 @foreground-color:#333;
-@background-color:#FFF;
+@background-color:#f9f9f9;
 
 @inverted-foreground-color:#fff;
 @inverted-background-color:#3eb4e4;
 
-@transparency:rgba(255,255,255,0.8);
-@transparency-fallback-png:url('assets/transparency-light.png');
+@transparency:rgba(0,0,0,0.4);
+@transparency-fallback-png:url('assets/transparency-dark.png');
 
 // ================
 // Validation Error
@@ -5780,7 +5697,7 @@ h6 {
 
 @component-instruction-padding-top:0px;
 @component-instruction-padding-sides:0px;
-@component-instruction-padding-bottom:0px;
+@component-instruction-padding-bottom:20px;
 
 @component-instruction-padding:@component-instruction-padding-top @component-instruction-padding-sides @component-instruction-padding-bottom;
 
@@ -5790,20 +5707,20 @@ h6 {
 
 @component-instruction-margin-top:0px;
 @component-instruction-margin-sides:0px;
-@component-instruction-padding-bottom:20px;
+@component-instruction-padding-bottom:5px;
 
 @component-instruction-margin:@component-instruction-margin-top @component-instruction-margin-sides @component-instruction-padding-bottom;
 
 // Navigation
 // ==========
 
-@navigation-color:@custom_drawer_color;
-@navigation-icon-color:@secondary-color;
+@navigation-color:@inverted-foreground-color;
+@navigation-icon-color:#CECECE;
 @navigation-icon-hover-color:darken(@secondary-color, 10%);
 
-@navigation-border-width:0px;
+@navigation-border-width:1px;
 @navigation-border-style:solid;
-@navigation-border-color:@primary-color;
+@navigation-border-color:@tccs-orange-color;
 @navigation-border: @navigation-border-width @navigation-border-style @navigation-border-color;
 
 @navigation-height: 60px;

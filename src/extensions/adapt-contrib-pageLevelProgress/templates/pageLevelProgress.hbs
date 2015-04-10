@@ -9,9 +9,7 @@
         	<h5 class="page-level-progress-item-title-inner">
             {{{title}}}
             </h5>
-            <div class="page-level-progress-indicator page-level-progress-indicator-{{#if _isComplete}}complete{{else}}incomplete{{/if}}">
-                <div class="page-level-progress-indicator-bar">
-                </div>
+            <div class="page-level-progress-indicator {{#if _isComplete}}icon icon-unlock{{else}}icon icon-lock{{/if}}">
             </div>
         {{#if _isVisible}}
         </a>

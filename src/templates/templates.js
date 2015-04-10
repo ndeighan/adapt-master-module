@@ -1001,11 +1001,11 @@ function program5(depth0,data,depth1) {
     + "\" class=\"component-item-text-color component-item-border";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.selected), {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\">\n                <div class=\"mcq-item-state\">\n                    <div class=\"mcq-item-icon mcq-answer-icon component-item-text-color icon\"></div>\n                    <div class=\"mcq-item-icon mcq-correct-icon icon icon-tick\"></div>\n                    <div class=\"mcq-item-icon mcq-incorrect-icon icon icon-cross\"></div>\n                </div>\n                <h5 class=\"mcq-item-inner\">\n                    ";
+  buffer += "\">\n                <div class=\"mcq-item-state\">\n                    <div class=\"mcq-item-icon mcq-answer-icon component-item-text-color icon\"></div>\n                    <div class=\"mcq-item-icon mcq-correct-icon icon icon-tick\"></div>\n                    <div class=\"mcq-item-icon mcq-incorrect-icon icon icon-cross\"></div>\n                </div>\n                <h6 class=\"mcq-item-inner\">\n                    ";
   if (helper = helpers.text) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.text); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </h5>\n            </label>\n            <input type=\"checkbox\" id=\""
+  buffer += "\n                </h6>\n            </label>\n            <input type=\"checkbox\" id=\""
     + escapeExpression(((stack1 = (depth1 && depth1._id)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "-"
     + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
@@ -2009,10 +2009,10 @@ function program1(depth0,data) {
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </h5>\n            <div class=\"page-level-progress-indicator page-level-progress-indicator-";
+  buffer += "\n            </h5>\n            <div class=\"page-level-progress-indicator ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0._isComplete), {hash:{},inverse:self.program(8, program8, data),fn:self.program(6, program6, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\">\n                <div class=\"page-level-progress-indicator-bar\">\n                </div>\n            </div>\n        ";
+  buffer += "\">\n            </div>\n        ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0._isVisible), {hash:{},inverse:self.program(12, program12, data),fn:self.program(10, program10, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n    </div>\n    ";
@@ -2038,13 +2038,13 @@ function program4(depth0,data) {
 function program6(depth0,data) {
   
   
-  return "complete";
+  return "icon icon-unlock";
   }
 
 function program8(depth0,data) {
   
   
-  return "incomplete";
+  return "icon icon-lock";
   }
 
 function program10(depth0,data) {
@@ -2172,24 +2172,24 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
 function program1(depth0,data) {
   
+  
+  return "\n<a href=\"#\" class=\"trickle-button icon icon-chevron-down trickle-button-right\">\n    ";
+  }
+
+function program3(depth0,data) {
+  
   var buffer = "", stack1;
-  buffer += "\n      ";
+  buffer += "\n<a href=\"#\" class=\"trickle-button icon icon-chevron-down\">    \n  <h6>    \n      ";
   stack1 = ((stack1 = ((stack1 = (depth0 && depth0._trickle)),stack1 == null || stack1 === false ? stack1 : stack1.button)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n    ";
   return buffer;
   }
 
-function program3(depth0,data) {
-  
-  
-  return "\n\n    ";
-  }
-
-  buffer += "\n<a href=\"#\" class=\"trickle-button icon icon-chevron-down\">\n  <h6>\n    ";
-  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._trickle)),stack1 == null || stack1 === false ? stack1 : stack1.button), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
+  buffer += "\n\n\n\n";
+  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._trickle)),stack1 == null || stack1 === false ? stack1 : stack1._isEnabled), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n  </h6>\n</a>\n";
+  buffer += "\n  </h6>\n</a>";
   return buffer;
   });
 
@@ -2840,7 +2840,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "";
 
 
-  buffer += "\n\n<div class=\"navigation-inner clearfix\">\n	<a href=\"#\" class=\"navImage\" data-event=\"tccsButton\"><img src=\"course/en/images/tccs logo.png\" height=\"50\"></a>\n    <a href=\"#\" class=\"navigation-drawer-toggle-button icon icon-book\" data-event=\"toggleDrawer\" alt=\"Drawer\"></a>\n	<a href=\"#\" class=\"navigation-back-button icon icon-controls-small-left\" data-event=\"backButton\" alt=\"Back button\"></a>\n</div>";
+  buffer += "\n\n<div class=\"navigation-inner clearfix\">\n	<a href=\"#\" class=\"navImage\" data-event=\"tccsButton\"><img src=\"course/en/images/tccs-logo-colour.png\" height=\"50\"></a>\n    <a href=\"#\" class=\"navigation-drawer-toggle-button icon icon-book\" data-event=\"toggleDrawer\" alt=\"Drawer\"></a>\n	<a href=\"#\" class=\"navigation-back-button icon icon-controls-small-left\" data-event=\"backButton\" alt=\"Back button\"></a>\n</div>";
   return buffer;
   });
 

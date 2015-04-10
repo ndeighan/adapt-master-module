@@ -1,28 +1,51 @@
 [
-    
-{
-  "_id":"c-01",
+
+{  
+  "_id":"c-05",
   "_parentId":"b-05",
   "_type":"component",
   "_component":"webObject",
         "_classes":"",
         "_layout":"full",
-        "title":"Insert a Web Object",
+        "title":"Customer Escalations",
         "displayTitle":"",
         "body":"",
         "instruction":"",
         "_webObject": {
             "type": "text/html",
-            "data": "course/en/embed/web/page1.html",
+            "data": "course/en/embed/edgeCallToParent/edgeCallToParent.html",
             "width": "100%",
-            "height": "300px"
+            "height": "350px"
         }
-},    
 
+}, 
+    
 {  
-  "_id":"c-05",
-  "_parentId":"b-05",
-    "_type":"component",
+  "_id":"c-10",
+  "_parentId":"b-10",
+  "_type":"component",
+  "_component":"webObject",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Customer Service Skills",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_webObject": {
+            "type": "text/html",
+            "data": "course/en/embed/block2/index.html",
+            "width": "100%",
+            "height": "320px"
+        },
+    "_pageLevelProgress": {
+        "_isEnabled": true
+    }
+},
+
+{
+  "_id":"c-15",
+  "_parentId":"b-10",
+	"_type":"component",
 	"_component":"mcq",
 	"_classes":"",
 	"_layout":"full",
@@ -30,44 +53,48 @@
 	"_questionWeight":1,
 	"_isRandom":false,
 	"_selectable":1,
-	"title": "MCQ",
+	"title": "",
 	"displayTitle": "",
 	"body": "",
 	"instruction": "",
 	"_items": [
 		{
-			"text": "This is option 1.",
+			"text": "Polite, Positive",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "Personal, Patient",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "Product and Procedural Knowledge",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "All of the above and then some...",
 			"_shouldBeSelected":true
-		},
-		{
-			"text": "This is option 2.",
-			"_shouldBeSelected":false
-		},
-		{
-			"text": "This is option 3.",
-			"_shouldBeSelected":false
 		}
 	],
-    "_feedback":{
-        "correct":"Congratulations, this is the correct feedback.",
+        "_feedback":{
+        "correct":"Yes, those are the skills and qualities that we chose.",
         "_incorrect": {
             "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
+            "final": "We chose differently."
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
+            "final": "We chose differently."
       }
 	},	
 	"_feedbackgraphic":{
-        "correct":"course/en/images/allison.png",
+        "correct":"course/en/images/correct.png",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
+            "final": "course/en/images/incorrect.png"
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
+            "final": "course/en/images/incorrect.png"
       }
 	},	
 	"_feedbackgraphicalt":{
@@ -93,25 +120,25 @@
       }
 	},	
 	"_feedbackaudiosrcmp3":{
-        "correct":"course/en/audio/Gold.mp3",
+        "correct":"course/en/audio/MCQ1-pos-feedback.mp3",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Bronze.mp3"
+            "final": "course/en/audio/MCQ1-neg-feedback.mp3"
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Silver.mp3"
+            "final": "course/en/audio/MCQ1-neg-feedback.mp3"
       }
 	},
 	"_feedbackaudiosrcogg":{
-        "correct":"course/en/audio/Gold.ogg",
+        "correct":"course/en/audio/MCQ1-pos-feedback.ogg",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Bronze.ogg"
+            "final": "course/en/audio/MCQ1-neg-feedback.ogg"
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Silver.ogg"
+            "final": "course/en/audio/MCQ1-neg-feedback.ogg"
       }
 	},
 	"_buttons":{
@@ -121,412 +148,402 @@
 		"hideCorrectAnswer":""
 	},
     "triggered": {
-	"top": 240,
-	"left": 910,
+	"top": 290,
+	"left": "7%",
 	"showButtonText": "",
 	"hideButtonText": ""
-    },
-    "_pageLevelProgress": {
-        "_isEnabled": true
-    }
-}, 
-
-{
-  "_id":"c-10",
-  "_parentId":"b-10",
-  "_type":"component",
-  "_component":"webObject",
-        "_classes":"",
-        "_layout":"full",
-        "title":"Insert a Web Object",
-        "displayTitle":"",
-        "body":"",
-        "instruction":"",
-        "_webObject": {
-            "type": "text/html",
-            "data": "course/en/embed/web/page3.html",
-            "width": "100%",
-            "height": "300px"
-        }
-},
-  
-{
-  "_id":"c-15",
-  "_parentId":"b-10",
-    "_type":"component",
-	"_component":"mcq",
-	"_classes":"",
-	"_layout":"left",
-	"_attempts":1,
-	"_questionWeight":1,
-	"_isRandom":false,
-	"_selectable":1,
-	"title": "MCQ",
-	"displayTitle": "",
-	"body": "",
-	"instruction": "",
-	"_items": [
-		{
-			"text": "This is option 1.",
-			"_shouldBeSelected":true
-		},
-		{
-			"text": "This is option 2.",
-			"_shouldBeSelected":false
-		},
-		{
-			"text": "This is option 3.",
-			"_shouldBeSelected":false
-		}
-	],
-    "_feedback":{
-        "correct":"Congratulations, this is the correct feedback.",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
-      }
-	},	
-	"_feedbackgraphic":{
-        "correct":"course/en/images/allison.png",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
-      }
-	},	
-	"_feedbackgraphicalt":{
-        "correct":"Correct Image",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "Incorrect Image"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "Partially Correct Image"
-      }
-	},	
-	"_feedbackgraphictitle":{
-        "correct":"That's right!",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "No, that's not right."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "That's almost right"
-      }
-	},	
-	"_feedbackaudiosrcmp3":{
-        "correct":"course/en/audio/Gold.mp3",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Bronze.mp3"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Silver.mp3"
-      }
-	},
-	"_feedbackaudiosrcogg":{
-        "correct":"course/en/audio/Gold.ogg",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Bronze.ogg"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Silver.ogg"
-      }
-	},
-	"_buttons":{
-		"submit":"",
-		"reset":"",
-		"showCorrectAnswer":"",
-		"hideCorrectAnswer":""
-	},
-    "triggered": {
-	"top": 150,
-	"left": 900,
-	"showButtonText": "",
-	"hideButtonText": ""
-    },
-    "_pageLevelProgress": {
-        "_isEnabled": true
     }
 },
   
-{
-  "_id":"c-16",
-  "_parentId":"b-15",
-  "_type":"component",
-  "_component":"webObject",
-        "_classes":"",
-        "_layout":"full",
-        "title":"Insert a Web Object",
-        "displayTitle":"",
-        "body":"",
-        "instruction":"",
-        "_webObject": {
-            "type": "text/html",
-            "data": "course/en/embed/web/page5.html",
-            "width": "100%",
-            "height": "300px"
-        }
-},
-  
-{
-  "_id":"c-17",
-  "_parentId":"b-15",
-    "_type":"component",
-	"_component":"mcq",
-	"_classes":"",
-	"_layout":"right",
-	"_attempts":1,
-	"_questionWeight":1,
-	"_isRandom":false,
-	"_selectable":1,
-	"title": "MCQ",
-	"displayTitle": "",
-	"body": "",
-	"instruction": "",
-	"_items": [
-		{
-			"text": "This is option 1.",
-			"_shouldBeSelected":true
-		},
-		{
-			"text": "This is option 2.",
-			"_shouldBeSelected":false
-		},
-		{
-			"text": "This is option 3.",
-			"_shouldBeSelected":false
-		}
-	],
-    "_feedback":{
-        "correct":"Congratulations, this is the correct feedback.",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
-      }
-	},	
-	"_feedbackgraphic":{
-        "correct":"course/en/images/allison.png",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
-      }
-	},	
-	"_feedbackgraphicalt":{
-        "correct":"Correct Image",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "Incorrect Image"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "Partially Correct Image"
-      }
-	},	
-	"_feedbackgraphictitle":{
-        "correct":"That's right!",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "No, that's not right."
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "That's almost right"
-      }
-	},	
-	"_feedbackaudiosrcmp3":{
-        "correct":"course/en/audio/Gold.mp3",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Bronze.mp3"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Silver.mp3"
-      }
-	},
-	"_feedbackaudiosrcogg":{
-        "correct":"course/en/audio/Gold.ogg",
-        "_incorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Bronze.ogg"
-        },
-        "_partlyCorrect": {
-            "notFinal": "",
-            "final": "course/en/audio/Silver.ogg"
-      }
-	},
-	"_buttons":{
-		"submit":"",
-		"reset":"",
-		"showCorrectAnswer":"",
-		"hideCorrectAnswer":""
-	},
-    "triggered": {
-	"top": 70,
-	"left": 900,
-	"showButtonText": "",
-	"hideButtonText": ""
-    },
-    "_pageLevelProgress": {
-        "_isEnabled": true
-    }
-},    
     
 {
   "_id":"c-20",
-  "_parentId":"b-20",
-  "_classes": "",
-  "_type": "component",
-  "_layout": "full",
-  "_component": "narrativeWithAudio",
-  "title": "Narrative",
-  "body": "This is optional body text. Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
-  "items": [
-    {
-      "title": "Narrative stage 1 title",
-      "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
-      "graphic": {
-        "src": "course/en/images/narrative_1.png",
-        "alt": "First graphic",
-        "title": "Second graphic"
-      },
-      "strapline": "Here is the first...",
-      "audioSrc": "course/en/audio/Bronze",
-      "audioTypes": [
-        {
-          "type": "ogg",
-          "codec": "audio/ogg"
-        },
-        {
-          "type": "mp3",
-          "codec": "audio/mpeg"
-        }
-      ]
-    },
-    {
-      "title": "Narrative stage 2 title",
-      "body": "This is display text 2.",
-      "graphic": {
-        "src": "course/en/images/narrative_2.png",
-        "alt": "Second graphic",
-        "title": "Second graphic"
-      },
-      "strapline": "Now comes the second...",
-      "audioSrc": "course/en/audio/Silver",
-      "audioTypes": [
-        {
-          "type": "ogg",
-          "codec": "audio/ogg"
-        },
-        {
-          "type": "mp3",
-          "codec": "audio/mpeg"
-        }
-      ]
-    },
-    {
-      "title": "Narrative stage 3 title",
-      "body": "This is display text 3.",
-      "graphic": {
-        "src": "course/en/images/narrative_3.png",
-        "alt": "Third graphic",
-        "title": "Third graphic"
-      },
-      "strapline": "Third here!",
-      "audioSrc": "course/en/audio/Gold",
-      "audioTypes": [
-        {
-          "type": "ogg",
-          "codec": "audio/ogg"
-        },
-        {
-          "type": "mp3",
-          "codec": "audio/mpeg"
-        }
-      ]
-    }
-  ]
+  "_parentId":"b-15",
+	"_type":"component",
+	"_component":"media",
+	"_classes":"",
+	"_layout":"full",
+	"title":"",
+	"displayTitle": "",
+	"body": "",
+	"instruction": "",
+	"_setCompletionOn":"ended",
+	"_media": {
+		"mp4": "course/en/video/WhiteboardAnimation.mp4",
+		"ogv": "course/en/video/WhiteboardAnimation.ogv",
+		"poster": "course/en/video/WhiteboardAnimationPoster.png"
+	},
+	"_playerOptions": {
+		"defaultVideoWidth": 480,
+		"defaultVideoHeight": 270,
+		"videoWidth": -1,
+		"videoHeight": -1,
+		"audioWidth": 400,
+		"audioHeight": 30,
+		"startVolume": 0.8,
+		"loop": false,
+		"enableAutosize": true,
+		"features": ["playpause","progress","current","duration","tracks","volume","fullscreen"],
+		"alwaysShowControls": false,
+		"iPadUseNativeControls": false,
+		"iPhoneUseNativeControls": false,
+		"AndroidUseNativeControls": false,
+		"alwaysShowHours": false,
+		"showTimecodeFrameCount": false,
+		"framesPerSecond": 25,
+		"enableKeyboard": true,
+		"pauseOtherPlayers": true,
+		"keyActions": []
+	}
 },
     
 {
   "_id":"c-25",
-  "_parentId":"b-25",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 5",
-  "displayTitle":"Component 5 Title",
-  "body":"Component 5 text",
-  "_pageLevelProgress": {
-      "_isEnabled": true
-    }
+  "_parentId":"b-20",
+        "_type":"component",
+        "_component":"graphic",
+        "_classes":"",
+        "_layout":"full",
+        "title":"",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_graphic": {
+            "alt": "alt text",
+            "title": "title text",
+            "large": "course/en/images/mcq2.png",
+            "medium": "course/en/images/mcq2.png",
+            "small": "course/en/images/mcq2.png"
+        }
 },
     
 {
   "_id":"c-30",
-  "_parentId":"b-30",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 6",
-  "displayTitle":"Component 6 Title",
-  "body":"Component 6 text.",
-  "_pageLevelProgress": {
-      "_isEnabled": true
-    }
-},
-    
-{
-  "_id":"c-35",
-  "_parentId":"b-35",
-  "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 7",
-  "displayTitle":"Component 7 Title",
-  "body":"Component 7 text.",
-  "_pageLevelProgress": {
-      "_isEnabled": true
-  }
+  "_parentId":"b-20",
+    "_type":"component",
+	"_component":"mcq",
+	"_classes":"",
+	"_layout":"full",
+	"_attempts":1,
+	"_questionWeight":1,
+	"_isRandom":false,
+	"_selectable":2,
+	"title": "",
+	"displayTitle": "",
+	"body": "",
+	"instruction": "Some centers encourage their supervisors to spend a few hours a week doing the agent role. What are the benefits of this?",
+	"_items": [
+		{
+			"text": "It keeps your knowledge fresh.",
+			"_shouldBeSelected":true
+		},
+		{
+			"text": "It gives you time to plan your day.",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "Your agents are more confident in your abilities. ",
+			"_shouldBeSelected":true
+		},
+		{
+			"text": "It hones your multitasking abilities.",
+			"_shouldBeSelected":false
+		}
+	],
+    "_feedback":{
+        "correct":"Yes, that’s right. By acting as an agent for a few hours a week you can keep your knowledge of the agents’ daily tasks fresh. It also gives your agents more confidence in your abilities if they see you doing the job that you’re asking them to do.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "We chose different reasons. By acting as an agent for a few hours a week you can keep your knowledge of the agents’ daily tasks fresh. It also gives your agents more confidence in your abilities if they see you doing the job that you’re asking them to do."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "We chose different reasons. By acting as an agent for a few hours a week you can keep your knowledge of the agents’ daily tasks fresh. It also gives your agents more confidence in your abilities if they see you doing the job that you’re asking them to do."
+      }
+	},
+    "_feedbackgraphic":{
+        "correct":"course/en/images/correct.png",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/images/incorrect.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/images/incorrect.png"
+      }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+      }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+      }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/MCQ2-pos-feedback.mp3",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/MCQ2-neg-feedback.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/MCQ2-neg-feedback.mp3"
+      }
+	},
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/MCQ2-pos-feedback.ogg",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/MCQ2-neg-feedback.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/MCQ2-neg-feedback.ogg"
+      }
+	},
+	"_buttons":{
+		"submit":"",
+		"reset":"",
+		"showCorrectAnswer":"",
+		"hideCorrectAnswer":""
+	}
 },
     
 {
   "_id":"c-40",
-  "_parentId":"b-40",
+  "_parentId":"b-30",
   "_type":"component",
-  "_component":"text",
-  "_classes":"",
-  "_layout":"full",
-  "title":"Component 8",
-  "displayTitle":"Component 8 Title",
-  "body":"Component 8 text.",
-  "_pageLevelProgress": {
-      "_isEnabled": true
+  "_component":"webObject",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Customer Service Skills",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_webObject": {
+            "type": "text/html",
+            "data": "course/en/embed/block4/index.html",
+            "width": "100%",
+            "height": "600px"
+        },
+    "_pageLevelProgress": {
+        "_isEnabled": true
     }
-}
+}, 
+    
+{
+  "_id":"c-45",
+  "_parentId":"b-31",
+    "_type":"component",
+    "_component":"textinput",
+    "_classes":"",
+    "_layout":"left",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_attempts": 1,
+    "_questionWeight":10,
+    "placeholder": "Enter answer here",
+    "_allowsAnyCase": true,
+    "_allowsPunctuation": true,
+    "_buttons":{
+        "submit":"SUBMIT",
+        "reset":"RESET",
+        "showCorrectAnswer":"MODEL ANSWER",
+        "hideCorrectAnswer":"YOUR ANSWER"
+    },
+    "_items": [
+        {
+            "prefix": "Answer:",
+            "suffix": "",
+            "_answers": [
+                "emotional intelligence"
+            ]
+        }
+    ],
+    "_feedback":{
+        "correct":"Yes, that’s right. Emotional Intelligence is a useful set of skills which is useful for dealing with hostile customers.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "That’s not quite right. Emotional Intelligence is a useful set of skills which is useful for dealing with hostile customers."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That’s not quite right. Emotional Intelligence is a useful set of skills which is useful for dealing with hostile customers."
+        }
+	},	
+	"_feedbackgraphic":{
+        "correct":"course/en/images/correct.png",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/images/incorrect.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/images/incorrect.png"
+        }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+        }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+        }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/TXTinput-pos-feedback.mp3",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/TXTinput-neg-feedback.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/TXTinput-neg-feedback.mp3"
+        }
+	},
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/TXTinput-pos-feedback.ogg",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/TXTinput-neg-feedback.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "course/en/audio/TXTinput-neg-feedback.ogg"
+        }
+    }
+},
+    
+{
+  "_id":"c-50",
+  "_parentId":"b-35",
+        "_classes": "",
+        "_type":"component",
+        "_layout": "full",
+        "_component": "narrative",
+        "title": "Coaching Skills",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_items": [
+            {
+                "title": "Coaching Skills",
+                "body": "<ul><li>A contact center supervisor also requires strong coaching skills.</li><li>Most contact centers are constantly changing, with new staff joining teams, new processes to follow, and new products or services available. </li><li>Coaching helps you to monitor and manage these changes, while maintaining and improving the service you provide to your customers.</li>",
+                "_graphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "First graphic",
+                    "title": "Second graphic"
+                },
+                "strapline": "Here is the first..."
+            },
+            {
+                "title": "Coaching Skills",
+                "body": "<li>Every contact center has a person or a team who is in charge of the quality program. </li><li>They will have created a quality-monitoring form that focuses on the core business goals, and that helps you to accurately assess your agents’ performance. </li><li>The more time you spend getting to know this form, the easier it will be for you to score.</li>",
+                "_graphic": {
+                    "src": "course/en/images/narrative_2.png",
+                    "alt": "Second graphic",
+                    "title": "Second graphic"
+                },
+                "strapline": "Now comes the second..."
+            },
+            {
+                "title": "Coaching Skills",
+                "body": "<li>The quality team will arrange regular calibration meetings to ensure that the form is used consistently, and that agents are assessed fairly.</li><li> These meetings are your opportunity to discuss any concerns you have with the form and how to score it. </li><li>It also gives you a chance to clarify any procedures that you aren’t certain of.</li>",
+                "_graphic": {
+                    "src": "course/en/images/narrative_3.png",
+                    "alt": "Third graphic",
+                    "title": "Third graphic"
+                },
+                "strapline": "Third here!"
+            },
+            {
+                "title": "Coaching Skills",
+                "body": "<li>Listening skills are essential to coach effectively. </li><li>When you’re delivering feedback to an agent, it’s important to take their views in to account. </li><li>If you need an agent to change a behavior, you first have to understand why they demonstrated that behavior. </li><li>If you want an agent to keep on doing something that they do well, you need to listen to them to check that they understood what they did well, and why is was a good thing.</li>",
+                "_graphic": {
+                    "src": "course/en/images/narrative_4.png",
+                    "alt": "Fourth graphic",
+                    "title": "Fourth graphic"
+                },
+                "strapline": "Fourth here!"
+            },
+            {
+                "title": "Coaching Skills",
+                "body": "<li>The highest level of listening is called empathic listening. </li><li>You have to train yourself to listen to each agent as though it was the first time you’ve had this discussion, no matter how many similar discussions you’ve had in the past with the rest of your team. </li><li>The key to empathic listening is to slow down, be patient, talk less and listen more. </li><li>Teach yourself to see the situation through the eyes of this agent.</li>",
+                "_graphic": {
+                    "src": "course/en/images/narrative_5.png",
+                    "alt": "Fifth graphic",
+                    "title": "Fifth graphic"
+                },
+                "strapline": "Fifth here!"
+            }
+        ],
+      "_pageLevelProgress": {
+      "_isEnabled": true
+      }
+    },
+    
+{
+    "_id":"c-55",
+    "_parentId":"b-40",
+    "_type":"component",
+    "_component":"text",
+    "_classes":"center-text",
+    "_layout":"full",
+    "title":"",
+    "displayTitle":"title text",
+    "body":"more text",
+    "instruction":"Check you have completed the module."
+},
+
+{
+    "_id":"c-60",
+    "_parentId":"b-40",        
+        "_type":"component",
+        "_component":"graphic",
+        "_classes":"",
+        "_layout":"full",
+        "title":"",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_graphic": {
+            "alt": "alt text",
+            "title": "title text",
+            "large": "course/en/images/adapt_footer.png",
+            "medium": "course/en/images/adapt_footer.png",
+            "small": "course/en/images/adapt_footer.png"
+        }
+    }
     
 ]

@@ -2,8 +2,19 @@
 
     .tutor {
         position: fixed;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        -moz-border-radius-bottomright: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; 
         top: 50%;
-        width:100%;
+        left: 25%;
+        width:50%;
         background-color: #f6f6f6;
         color: @foreground-color;
         z-index: 550;
@@ -18,10 +29,10 @@
     .tutor-image {
         width:146px;
         height:150px;
-        padding-right:100px;
+        margin-left: auto;
+        margin-right: auto;
 		display:block;
         position: relative;
-		float: right;
         z-index: 560;
 	}
     .tutor-audio {
@@ -37,8 +48,12 @@
     }
 
     .tutor-inner {
-        padding: 50px;
+        width: 80%;
+        padding-top: 10px;
         padding-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .tutor-toolbar {

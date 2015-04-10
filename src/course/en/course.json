@@ -1,16 +1,16 @@
 {
     "_id": "course",
     "_type": "course",
-    "title": "Module Title",
-    "displayTitle": "Module Title",
-    "body": "This module was created using the Adapt framework.",
+    "title": "Skills and Knowledge: Part 1",
+    "displayTitle": "",
+    "body": "",
     "_buttons": {
         "submit": "Submit",
         "reset": "Reset",
         "showCorrectAnswer": "Model Answer",
         "hideCorrectAnswer": "My Answer"
     },
-    "_latestTrackingId": 7,
+    "_latestTrackingId": 8,
     "_resources": {
         "title": "Resources",
         "description": "Click here to view resources for this course",

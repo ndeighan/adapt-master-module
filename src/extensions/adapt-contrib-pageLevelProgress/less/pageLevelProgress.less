@@ -33,13 +33,19 @@
 }
 
 .page-level-progress-indicator {
-	width: 16%;
-	height: 10px;
-    margin-left:4%;
-    display: inline-block;
-	border-radius:5px;
-	overflow:hidden;
-	background-color:@background-color;
+	width: 20px;
+    float: right;
+    .icon {
+        display:block;
+        width:@icon-size;
+        height:@icon-size;
+        font-size:@icon-size;
+        text-decoration:none;
+        color:@navigation-icon-color;
+        .no-touch &:hover {
+            color:@navigation-icon-hover-color;
+        }
+    }
 }
 
 .page-level-progress-indicator-complete {
@@ -85,9 +91,9 @@
 .page-level-progress-navigation-completion {
     width: 100px;
     height: 8px;
-    background-color: (@background-color);
+    background-color: (@inverted-foreground-color);
     overflow: hidden;
-    border: 2px solid @background-color;
+    border: 2px solid #D6D6D6;
     position: relative;
     border-radius: 5px;
 }

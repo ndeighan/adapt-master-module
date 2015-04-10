@@ -6,12 +6,12 @@ define(function(require) {
   var Adapt = require('coreJS/adapt');
 
   var WebObject = ComponentView.extend({
-
+      
     postRender: function() {
       this.setReadyStatus();
-      this.$('.component-inner').on('inview', _.bind(this.inview, this));
-    },
-
+//      this.$('.component-inner').on('inview', _.bind(this.inview, this));
+    },      
+      
     inview: function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             if (visiblePartY === 'top') {
@@ -29,11 +29,15 @@ define(function(require) {
             }
             
         }
-    }
-
+    },
+      
   });
 
   Adapt.register("webObject", WebObject);
 
 });
 
+    function abc() {
+        alert("sss");
+        WebObject.inview('event', 'visible', 'visiblePartX', 'visiblePartY');
+    }   

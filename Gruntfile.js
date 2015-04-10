@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     var outputdir = grunt.option('outputdir') || '',
         theme = grunt.option('theme') || 'adapt-theme-tccs',
-        menu = grunt.option('menu') || 'adapt-contrib-boxMenu';
+        menu = grunt.option('menu') || 'adapt-menu-singlePageCourse';
 
     if (outputdir) {
         if (outputdir.substring(outputdir.length - 1, outputdir.length) !== '/') {

@@ -1,10 +1,13 @@
 {{! Maintainers - Kevin Corry}}
-<a href="#" class="trickle-button icon icon-chevron-down">
-  <h6>
-    {{#if _trickle.button}}
-      {{{_trickle.button}}}
-    {{else}}
 
+
+
+{{#if _trickle._isEnabled}}
+<a href="#" class="trickle-button icon icon-chevron-down trickle-button-right">
+    {{else}}
+<a href="#" class="trickle-button icon icon-chevron-down">    
+  <h6>    
+      {{{_trickle.button}}}
     {{/if}}
   </h6>
 </a>
