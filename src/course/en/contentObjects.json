@@ -4,15 +4,15 @@
         "_parentId":"course",
         "_type":"page",
         "_classes":"",
-        "title":"Skills and Knowledge",
-        "displayTitle":"Skills and Knowledge",
+        "title":"Title",
+        "displayTitle":"Title",
         "body":"",
         "_graphic": {
-            "alt": "Chapter 1",
-            "src": "course/en/images/narrative_1.png"
+            "alt": "",
+            "src": ""
         },
         "linkText":"View",
-        "duration":"2 mins"
+        "duration":"Time"
     }
     
 ]

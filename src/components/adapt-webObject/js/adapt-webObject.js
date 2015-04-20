@@ -9,7 +9,7 @@ define(function(require) {
       
     postRender: function() {
       this.setReadyStatus();
-//      this.$('.component-inner').on('inview', _.bind(this.inview, this));
+      this.$('.component-inner').on('inview', _.bind(this.inview, this));
     },      
       
     inview: function(event, visible, visiblePartX, visiblePartY) {

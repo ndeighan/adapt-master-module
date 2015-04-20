@@ -1,7 +1,7 @@
 {
     "_id": "course",
     "_type": "course",
-    "title": "Skills and Knowledge: Part 1",
+    "title": "Course Title",
     "displayTitle": "",
     "body": "",
     "_buttons": {
@@ -10,7 +10,7 @@
         "showCorrectAnswer": "Model Answer",
         "hideCorrectAnswer": "My Answer"
     },
-    "_latestTrackingId": 8,
+    "_latestTrackingId": 1,
     "_resources": {
         "title": "Resources",
         "description": "Click here to view resources for this course",

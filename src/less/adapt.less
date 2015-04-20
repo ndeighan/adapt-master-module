@@ -327,167 +327,6 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
     }
   }
 }
-.narrative-component {    
-
-    &.desktop { 
-        .narrative-slide-container {
-            float: left;
-            margin-right: 3%;
-            width: 60%;
-        }
-        .narrative-slider-graphic {
-            margin-right: 0;
-            width:60%;
-        }
-        .narrative-strapline {
-            display:none;
-        }
-    }
-
-    .narrative-content {
-        float: left;
-        width: 36%;
-        background: #fff;
-        color: @foreground-color;
-    }
-
-    .narrative-content-inner {
-        padding:20px;
-    }
-
-    &.mobile {
-        .narrative-content {
-            display:none;
-        }
-    }
-
-    .narrative-slide-container {
-        width: 100%;
-        position: relative;
-        overflow-x: hidden;
-        float: left;
-    }  
-
-    .narrative-slider-graphic {
-        float: left;
-        position: relative;
-    }
-
-    .narrative-item-title {
-        position:relative;
-        display:block;
-    }
-
-    .narrative-indicators {
-        text-align: center;
-    }
-
-    .narrative-progress {
-        width: (@icon-size/3);
-        height: (@icon-size/3);
-        display: inline-block;
-        background-color: @item-color;
-        border:1px solid @foreground-color;
-        & when (@item-border-width = 1px) {
-            border: @item-border;
-        }
-        border-radius: 50%;
-        margin: 1px;        
-        &.selected {
-            background-color: @item-text-color;        
-        }
-    }
-
-    .narrative-controls {
-        display: block;
-        width: (@icon-size*2);
-        height: (@icon-size*2);
-        position: absolute;
-        top: 50%;
-        margin-top: -(@icon-size*2);
-        z-index: 10;
-        text-decoration: none;
-        background-color:@button-color;
-        &:hover {
-            background-color:@button-hover-color;
-            .icon {
-                color:@button-text-hover-color;
-            }
-        }
-        .icon {
-            margin: (@icon-size/2);
-            color:@button-text-color;
-        }
-    }
-
-    .narrative-control-left {
-        left: 0;
-        -webkit-border-top-right-radius: 100px;
-        -webkit-border-bottom-right-radius: 100px;
-        -moz-border-radius-topright: 100px;
-        -moz-border-radius-bottomright: 100px;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
-    }
-
-    .narrative-control-right {
-        right: 0;
-        -webkit-border-top-left-radius: 100px;
-        -webkit-border-bottom-left-radius: 100px;
-        -moz-border-radius-topleft: 100px;
-        -moz-border-radius-bottomleft: 100px;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-    }
-
-    .narrative-strapline {
-        background-color: @inverted-background-color;
-        color: @inverted-foreground-color;
-        height: auto;
-        position: relative;
-    }
-
-    .narrative-strapline-header {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .narrative-strapline-title {
-        float: left;
-    }
-
-    .narrative-strapline-title-inner {
-        height: (@item-padding-top + @item-padding-bottom + @icon-size);
-        line-height: (@item-padding-top + @item-padding-bottom + @icon-size);
-        padding-left: (@icon-size/2);
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    .narrative-popup-open {
-        display: block;
-        position: absolute;
-        top:0;
-        right:0;
-        text-decoration: none;
-        z-index: 5;
-        background-color: @inverted-background-color;
-        padding: @item-padding;
-        .icon {
-            color: @inverted-foreground-color;
-            &:hover {
-                color: lighten(@inverted-background-color, 30%);
-            }
-        }
-    }
-
-    .narrative-hidden {
-        display:none;
-    }
-
-}
-
 .accordion-component {
 
   .accordion-item {
@@ -1667,14 +1506,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 	padding: 0;
 	bottom: 0;
 	left: 0;
-	background: url(../../assets/background.png);
-	background: rgba(0, 0, 0, 0.7);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));
-	background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
-	background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
-	background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
-	background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
-	background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: #333;
 	height: 30px;
 	width: 100%;
 }
@@ -1779,13 +1611,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 .mejs-controls .mejs-time-rail .mejs-time-total {
 	margin: 5px;
 	background: #333;
-	background: rgba(50,50,50,0.8);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(30,30,30,0.8)), to(rgba(60,60,60,0.8)));
-	background: -webkit-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
-	background: -moz-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
-	background: -o-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
-	background: -ms-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
-	background: linear-gradient(rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-buffering {
@@ -1814,26 +1640,12 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
 @keyframes buffering-stripes { from {background-position: 0 0;} to {background-position: 30px 0;} }
 
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
-	background: #3caac8;
-	background: rgba(60,170,200,0.8);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(44,124,145,0.8)), to(rgba(78,183,212,0.8)));
-	background: -webkit-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
-	background: -moz-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
-	background: -o-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
-	background: -ms-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
-	background: linear-gradient(rgba(44,124,145,0.8), rgba(78,183,212,0.8));
+	background: #fba900;
 	width: 0;
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-current {
 	background: #fff;
-	background: rgba(255,255,255,0.8);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.9)), to(rgba(200,200,200,0.8)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
-	background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
-	background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
-	background: -ms-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
-	background: linear-gradient(rgba(255,255,255,0.9), rgba(200,200,200,0.8));
 	width: 0;
 }
 
@@ -2512,63 +2324,21 @@ div.mejs-speed-button {
         .narrative-strapline {
             display:none;
         }
-
-        .narrative-content-inner {
-            .narrative-controls {
-                position:static;
-                display:none;
-                margin-top: 0px;
-                margin-bottom:10px;
-                width:auto;
-                height:auto;
-                padding:8px;
-                .icon {
-                    margin:0px;
-                }
-            }
-            .narrative-indicators {
-                display:none;
-                position: relative;
-                top: -4px;
-            }
-            .narrative-progress {
-                background-color:darken(@inverted-background-color, 10%);
-                &.selected {
-                    background-color: @item-text-color; 
-                }
-            }
-        }
-
-        .narrative-text-controls {
-            .narrative-content-inner {
-                .narrative-controls {
-                    display:inline-block;
-                }
-                .narrative-indicators {
-                    display:inline-block;
-                }
-            }
-            .narrative-slide-container {
-                .narrative-controls {
-                    display:none;
-                }
-                .narrative-indicators {
-                    display:none;
-                }
-            }
-
-        }
     }
 
     .narrative-content {
         float: left;
         width: 36%;
-        background: @inverted-foreground-color;
+        background: #fff;
         color: @foreground-color;
     }
 
     .narrative-content-inner {
         padding:20px;
+    }
+    
+    .narrative-content-title-inner {
+        padding-bottom: 10px;
     }
 
     &.mobile {
@@ -2610,7 +2380,7 @@ div.mejs-speed-button {
         border-radius: 50%;
         margin: 1px;        
         &.selected {
-            background-color: @item-text-color;        
+            background-color: @tccs-orange-color;        
         }
     }
 
@@ -2637,11 +2407,35 @@ div.mejs-speed-button {
     }
 
     .narrative-control-left {
-        left: 0;
+        left: 10px;
+        -webkit-border-top-right-radius: 100px;
+        -webkit-border-bottom-right-radius: 100px;
+        -webkit-border-top-left-radius: 100px;
+        -webkit-border-bottom-left-radius: 100px;
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        -moz-border-radius-topleft: 100px;
+        -moz-border-radius-bottomleft: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
 
     .narrative-control-right {
-        right: 0;
+        right: 10px;
+        -webkit-border-top-right-radius: 100px;
+        -webkit-border-bottom-right-radius: 100px;
+        -webkit-border-top-left-radius: 100px;
+        -webkit-border-bottom-left-radius: 100px;
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        -moz-border-radius-topleft: 100px;
+        -moz-border-radius-bottomleft: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
 
     .narrative-strapline {
@@ -4420,7 +4214,7 @@ override the defaults and extend as i see fit.
 .transparent-button {
     position:absolute;
     height:50px;
-    width:100px;
+    width:60px;
     cursor:default;
 }
 .extension-tutor {
@@ -4821,9 +4615,12 @@ h6 {
 }
 .icon-chevron-right:before {
 	content: "\f054";
+    margin: auto;
+    padding-left: 5px;
 }
 .icon-chevron-left:before {
 	content: "\f053";
+    margin: auto;
 }
 .icon-chevron-circle-down:before {
 	content: "\f13a";
@@ -5794,4 +5591,5 @@ h6 {
 @icon-size:24px;
 @icon-correct-color:#51FB66;
 @icon-incorrect-color:#F14E4E;
+@icon-margin: auto;
 

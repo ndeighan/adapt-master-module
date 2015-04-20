@@ -288,105 +288,6 @@ function program9(depth0,data,depth1) {
   return buffer;
   });
 
-this["Handlebars"]["templates"]["narrative"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
-  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
-
-function program1(depth0,data) {
-  
-  var buffer = "", stack1, helper;
-  buffer += "\n                    <div class=\"narrative-strapline-title\">\n                        <h5 class=\"narrative-strapline-title-inner\">\n                           ";
-  if (helper = helpers.strapline) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.strapline); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += " \n                        </h5>\n                    </div>\n                    ";
-  return buffer;
-  }
-
-function program3(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n                <div class=\"narrative-slider-graphic ";
-  stack1 = helpers['if'].call(depth0, (depth0 && depth0.visited), {hash:{},inverse:self.noop,fn:self.program(4, program4, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\">\n                    <img src=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._graphic)),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" alt=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._graphic)),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" title=\"";
-  stack1 = ((stack1 = ((stack1 = (depth0 && depth0._graphic)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\"/>\n\n                ";
-  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0._media)),stack1 == null || stack1 === false ? stack1 : stack1.mp3), {hash:{},inverse:self.program(8, program8, data),fn:self.program(6, program6, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n\n                </div>\n                ";
-  return buffer;
-  }
-function program4(depth0,data) {
-  
-  
-  return "visited";
-  }
-
-function program6(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n            <audio src=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._media)),stack1 == null || stack1 === false ? stack1 : stack1.mp3)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" type=\"audio/mp3\" />\n                ";
-  return buffer;
-  }
-
-function program8(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n            <audio src=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0._media)),stack1 == null || stack1 === false ? stack1 : stack1.ogg)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" type=\"audio/ogg\" />\n                ";
-  return buffer;
-  }
-
-function program10(depth0,data) {
-  
-  
-  return "\n                <div class=\"narrative-progress component-item-color component-item-border\"></div>\n                ";
-  }
-
-function program12(depth0,data) {
-  
-  var buffer = "", stack1, helper;
-  buffer += "\n                <div class=\"narrative-content-item\">\n                    <div class=\"narrative-content-title\">\n                        <h5 class=\"narrative-content-title-inner\">\n                           ";
-  if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += " \n                        </h5>\n                    </div>\n                    <div class=\"narrative-content-body\">\n                        <div class=\"narrative-content-body-inner\">\n                            ";
-  if (helper = helpers.body) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.body); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                        </div> \n                    </div>\n                </div>\n                ";
-  return buffer;
-  }
-
-  buffer += "\n<div class=\"narrative-inner component-inner\">\n    ";
-  stack1 = self.invokePartial(partials.component, 'component', depth0, helpers, partials, data);
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    <div class=\"narrative-widget component-widget\">\n        \n        <div class=\"narrative-strapline\">\n            <div class=\"narrative-strapline-header\">\n                <div class=\"narrative-strapline-header-inner clearfix\">\n                    ";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </div>\n            </div>\n            <a href=\"#\" class=\"narrative-popup-open\" tabindex=\"-1\">\n                <div class=\"icon icon-plus\"></div>\n            </a>\n        </div>\n        \n        <div class=\"narrative-slide-container\">\n  \n            <a href=\"#\" class=\"narrative-controls narrative-control-left\">\n                <div class=\"icon icon-controls-left\"></div>\n            </a>\n            <a href=\"#\" class=\"narrative-controls narrative-control-right\">\n                <div class=\"icon icon-controls-right\"></div>\n            </a>\n            \n            <div class=\"narrative-slider clearfix\">\n                ";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </div>\n            <div class=\"narrative-indicators\">\n                ";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(10, program10, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </div>\n        </div>\n\n        <div class=\"narrative-content\">\n            <div class=\"narrative-content-inner\">\n                ";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(12, program12, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </div>\n        </div>\n\n    </div>    \n</div>";
-  return buffer;
-  });
-
 this["Handlebars"]["templates"]["accordion"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
@@ -1210,12 +1111,6 @@ function program8(depth0,data) {
 
 function program10(depth0,data) {
   
-  
-  return "\n                    <div class=\"narrative-progress component-item-color component-item-border\"></div>\n                    ";
-  }
-
-function program12(depth0,data) {
-  
   var buffer = "", stack1, helper;
   buffer += "\n                <div class=\"narrative-content-item\">\n                    <div class=\"narrative-content-title\">\n                        <h5 class=\"narrative-content-title-inner\">\n                           ";
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -1226,21 +1121,21 @@ function program12(depth0,data) {
   else { helper = (depth0 && depth0.body); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n							";
-  stack1 = helpers['if'].call(depth0, (depth0 && depth0.audioSrc), {hash:{},inverse:self.noop,fn:self.program(13, program13, data),data:data});
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0.audioSrc), {hash:{},inverse:self.noop,fn:self.program(11, program11, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n                        </div> \n                    </div>\n                </div>\n                ";
   return buffer;
   }
-function program13(depth0,data) {
+function program11(depth0,data) {
   
   var buffer = "", stack1;
   buffer += "\n           						<div class=\"narrativePlayButton\">\n								<div class=\"icon icon-speaker\" onclick=\"aud_play_pause()\">\n                				<audio id=\"myAudio\" preload='metadata' hidden=hidden>\n                    				";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0.audioTypes), {hash:{},inverse:self.noop,fn:self.programWithDepth(14, program14, data, depth0),data:data});
+  stack1 = helpers.each.call(depth0, (depth0 && depth0.audioTypes), {hash:{},inverse:self.noop,fn:self.programWithDepth(12, program12, data, depth0),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n                				</audio>\n								</div>\n            				    </div>\n            			     ";
   return buffer;
   }
-function program14(depth0,data,depth1) {
+function program12(depth0,data,depth1) {
   
   var buffer = "", stack1, helper;
   buffer += "\n                        				<source src=\"";
@@ -1273,11 +1168,8 @@ function program14(depth0,data,depth1) {
   buffer += "\n            </div>\n            <div class=\"narrative-indicators\">\n                ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(8, program8, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </div>\n        </div>\n\n        <div class=\"narrative-content\">\n            <div class=\"narrative-content-inner\">\n                <a href=\"#\" class=\"narrative-controls narrative-control-left\">\n                    <div class=\"icon icon-controls-left\"></div>\n                </a>\n                <div class=\"narrative-indicators\">\n                    ";
+  buffer += "\n            </div>\n        </div>\n\n        <div class=\"narrative-content\">\n            <div class=\"narrative-content-inner\">\n\n                ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(10, program10, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                </div>\n                <a href=\"#\" class=\"narrative-controls narrative-control-right\">\n                    <div class=\"icon icon-controls-right\"></div>\n                </a>\n                ";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.program(12, program12, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n            </div>\n        </div>\n\n    </div>    \n</div>";
   return buffer;
