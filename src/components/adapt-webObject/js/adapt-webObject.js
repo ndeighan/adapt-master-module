@@ -12,23 +12,23 @@ define(function(require) {
       
     postRender: function() {
       this.setReadyStatus();
-      this.intervalCheck();
+      this.intervalCheck(this);
     },  
       
-    intervalCheck: function() {
+    intervalCheck: function(my_webobject) {
         if (triggerVar == "0") {
            console.log("triggerVar is still zero", triggerVar);
-           triggerCheck = setInterval(this.inview1, 1000);
+           triggerCheck = setInterval(this.inview1, 1000, my_webobject);
 		   this.triggerCheck;
         } 
         
     },
       
-    inview1: function() {
+    inview1: function(my_webobject) {
         console.log("trying completion", triggerVar);
         if (triggerVar == "1") {
 			console.log("trying status", triggerVar);
-            this.setCompletionStatus();
+            my_webobject.setCompletionStatus();
              }
     }        
 
