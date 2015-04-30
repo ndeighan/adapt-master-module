@@ -34,7 +34,7 @@
                 "_link": "https://community.staging.injixo.com/"
             },
             {
-                "_type": "PDF",
+                "_type": "document",
                 "title": "PDF Documents",
                 "description": "Download PDF",
                 "_link": "course/en/pdf/adapt-framework-prototypes-buttons.pdf"

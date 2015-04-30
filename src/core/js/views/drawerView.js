@@ -34,6 +34,7 @@ define(function(require) {
 
 		render: function() {
 			var template = Handlebars.templates['drawer']
+//            var template = Handlebars.templates['drawerItem']
             $(this.el).html(template).appendTo('body');
             return this;
 		},

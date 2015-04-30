@@ -12,7 +12,7 @@
 	        "button": ""
 	    }
     },
-    {
+     {
         "_id":"a-10",
         "_parentId":"co-01",
         "_type":"article",
@@ -22,7 +22,7 @@
         "body":"",
         "_trickle": true
     },
-    {
+     {
         "_id":"a-15",
         "_parentId":"co-01",
         "_type":"article",
@@ -32,8 +32,18 @@
         "body":"",
         "_trickle": true
     },
-    {
+     {
         "_id":"a-20",
+        "_parentId":"co-01",
+        "_type":"article",
+        "_classes":"",
+        "title":"Chapter 1",
+        "displayTitle":"",
+        "body":"",
+        "_trickle": true
+    },
+     {
+        "_id":"a-25",
         "_parentId":"co-01",
         "_type":"article",
         "_classes":"",

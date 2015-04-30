@@ -9,7 +9,7 @@
         "body": "",
         "_trackingId": 0
     },
-    {
+        {
         "_id": "b-10",
         "_parentId": "a-10",
         "_type": "block",
@@ -19,7 +19,7 @@
         "body": "",
         "_trackingId": 1
     },
-    {
+        {
         "_id": "b-15",
         "_parentId": "a-15",
         "_type": "block",
@@ -29,7 +29,7 @@
         "body": "",
         "_trackingId": 2
     },
-    {
+        {
         "_id": "b-20",
         "_parentId": "a-20",
         "_type": "block",
@@ -38,5 +38,15 @@
         "displayTitle": "",
         "body": "",
         "_trackingId": 3
+    },
+        {
+        "_id": "b-25",
+        "_parentId": "a-25",
+        "_type": "block",
+        "_classes": "",
+        "title": "Chapter 1",
+        "displayTitle": "",
+        "body": "",
+        "_trackingId": 4
     }
 ]
