@@ -23,7 +23,7 @@ define(function(require) {
     inview: function(event, visible) {
             if (visible) {
 			 triggerVar = "0";
-             triggerCheck = setInterval(this.inview1, 1000, this);
+             triggerCheck = setInterval(this.inview1, 100, this);
 		     this.triggerCheck;
             }
     },
