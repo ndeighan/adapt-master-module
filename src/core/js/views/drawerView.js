@@ -34,7 +34,6 @@ define(function(require) {
 
 		render: function() {
 			var template = Handlebars.templates['drawer']
-//            var template = Handlebars.templates['drawerItem']
             $(this.el).html(template).appendTo('body');
             return this;
 		},
@@ -151,7 +150,7 @@ define(function(require) {
 
 	var DrawerItemView = Backbone.View.extend({
 
-		className: 'drawer-item',
+		className: 'resources',
 
 		initialize: function() {
 			this.listenTo(Adapt, 'drawer:empty', this.remove);
@@ -164,11 +163,16 @@ define(function(require) {
 
 		render: function() {
 			var data = this.model.toJSON();
-			var template = Handlebars.templates['drawerItem']
+            
+            var eventCallback = this.model.get('eventCallback');
+			Adapt.trigger(eventCallback);
+            
+			var template = Handlebars.templates['resources']
             $(this.el).html(template(data)).appendTo('.drawer-holder');
+            console.log(data);
             return this;
 		},
-
+       
 		onDrawerItemClicked: function(event) {
 			event.preventDefault();
 			var eventCallback = this.model.get('eventCallback');
