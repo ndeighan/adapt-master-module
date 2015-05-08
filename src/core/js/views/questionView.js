@@ -217,7 +217,6 @@ define(function(require) {
                 }
             } else {
                 if (this.model.get('_attemptsLeft') === 0 || !this.model.get('_feedback')._incorrect.notFinal) {
-                    console.log(this.model.get('_feedback')._incorrect.final);
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
                         "feedbackMessage": this.model.get('_feedback')._incorrect.final,
@@ -228,7 +227,6 @@ define(function(require) {
 						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.final
                     });
                 } else {
-                    console.log(this.model.get('_feedback')._incorrect.notFinal),
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
                         "feedbackMessage": this.model.get('_feedback')._incorrect.notFinal,
