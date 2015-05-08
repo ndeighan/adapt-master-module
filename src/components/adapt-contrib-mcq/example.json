@@ -5,7 +5,7 @@
 	"_component":"mcq",
 	"_classes":"",
 	"_layout":"left",
-	"_attempts":1,
+	"_attempts":2,
 	"_questionWeight":1,
 	"_isRandom":false,
 	"_selectable":1,
@@ -30,7 +30,7 @@
     "_feedback":{
         "correct":"Congratulations, this is the correct feedback.",
         "_incorrect": {
-            "notFinal": "",
+            "notFinal": "Please Try Again!",
             "final": "This feedback will appear if you answered the question incorrectly."
         },
         "_partlyCorrect": {

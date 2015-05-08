@@ -57,6 +57,8 @@ define(function(require) {
                     return this.model.get('_feedback').correct;
                 } else if (this.isPartlyCorrect()) {
                     return this.model.get('_feedback')._partlyCorrect.final;
+                } else if (this.model.get('_attemptsLeft') !== 0){
+                    return this.model.get('_feedback')._incorrect.notFinal;
                 } else {
                     return this.model.get('_feedback')._incorrect.final;
                 }
@@ -215,6 +217,7 @@ define(function(require) {
                 }
             } else {
                 if (this.model.get('_attemptsLeft') === 0 || !this.model.get('_feedback')._incorrect.notFinal) {
+                    console.log(this.model.get('_feedback')._incorrect.final);
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
                         "feedbackMessage": this.model.get('_feedback')._incorrect.final,
@@ -225,6 +228,7 @@ define(function(require) {
 						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.final
                     });
                 } else {
+                    console.log(this.model.get('_feedback')._incorrect.notFinal),
                     this.model.set({
                         "feedbackTitle": this.model.get('title'),
                         "feedbackMessage": this.model.get('_feedback')._incorrect.notFinal,
@@ -232,7 +236,7 @@ define(function(require) {
 						"feedbackGraphicAlt": this.model.get('_feedbackgraphicalt')._incorrect.notFinal,
 						"feedbackGraphicTitle": this.model.get('_feedbackgraphictitle')._incorrect.notFinal,
 						"feedbackAudioMp3": this.model.get('_feedbackaudiosrcmp3')._incorrect.notFinal,
-						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.notFinal
+						"feedbackAudioOgg": this.model.get('_feedbackaudiosrcogg')._incorrect.notFinal,
                     });
                 }
             }

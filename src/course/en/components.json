@@ -3,22 +3,106 @@
 {  
   "_id":"c-05",
   "_parentId":"b-05",
-  "_type":"component",
-  "_component":"webObject",
-        "_classes":"",
-        "_layout":"full",
-        "title":"Insert a Web Object",
-        "displayTitle":"",
-        "body":"",
-        "instruction":"",
-        "_webObject": {
-            "type": "text/html",
-            "data": "course/en/embed/edgeCallToParent/edgeCallToParent.html",
-            "width": "100%",
-            "height": "350px"
+	"_type":"component",
+	"_component":"mcq",
+	"_classes":"",
+	"_layout":"left",
+	"_attempts":2,
+	"_questionWeight":1,
+	"_isRandom":false,
+	"_selectable":1,
+	"title": "MCQ",
+	"displayTitle": "MCQ",
+	"body": "Which of the following options would you consider to be correct?",
+	"instruction": "",
+	"_items": [
+		{
+			"text": "This is option 1.",
+			"_shouldBeSelected":true
+		},
+		{
+			"text": "This is option 2.",
+			"_shouldBeSelected":false
+		},
+		{
+			"text": "This is option 3.",
+			"_shouldBeSelected":false
+		}
+	],
+    "_feedback":{
+        "correct":"Congratulations, this is the correct feedback.",
+        "_incorrect": {
+            "notFinal": "Reset and Try Again!",
+            "final": "This feedback will appear if you answered question1 incorrectly."
         },
+        "_partlyCorrect": {
+            "notFinal": "Please try again!",
+            "final": "This feedback will appear if you answered part of the question correctly."
+      }
+	},	
+	"_feedbackgraphic":{
+        "correct":"course/en/images/correct.png",
+        "_incorrect": {
+            "notFinal": "course/en/images/narrative_1.png",
+            "final": "course/en/images/incorrect.png"
+        },
+        "_partlyCorrect": {
+            "notFinal": "course/en/images/narrative_2.png",
+            "final": "course/en/images/incorrect.png"
+      }
+	},	
+	"_feedbackgraphicalt":{
+        "correct":"Correct Image",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "Incorrect Image"
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "Partially Correct Image"
+      }
+	},	
+	"_feedbackgraphictitle":{
+        "correct":"That's right!",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "No, that's not right."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "That's almost right"
+      }
+	},	
+	"_feedbackaudiosrcmp3":{
+        "correct":"course/en/audio/Gold.mp3",
+        "_incorrect": {
+            "notFinal": "course/en/audio/MCQ1-neg-feedback.mp3",
+            "final": "course/en/audio/Bronze.mp3"
+        },
+        "_partlyCorrect": {
+            "notFinal": "course/en/audio/MCQ2-neg-feedback.mp3",
+            "final": "course/en/audio/Silver.mp3"
+      }
+	},
+	"_feedbackaudiosrcogg":{
+        "correct":"course/en/audio/Gold.ogg",
+        "_incorrect": {
+            "notFinal": "course/en/audio/MCQ1-neg-feedback.mp3",
+            "final": "course/en/audio/Bronze.ogg"
+        },
+        "_partlyCorrect": {
+            "notFinal": "course/en/audio/MCQ2-neg-feedback.mp3",
+            "final": "course/en/audio/Silver.ogg"
+      }
+	},
+	"_buttons":{
+		"submit":"",
+		"reset":"",
+		"showCorrectAnswer":"",
+		"hideCorrectAnswer":""
+	},
     "_pageLevelProgress": {
-    "_isEnabled": true
+        "_isEnabled": true
     }
 },
     {  
