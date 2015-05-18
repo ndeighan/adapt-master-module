@@ -51,7 +51,7 @@ define(function (require) {
         checkAnswerIsCorrect: function(possibleAnswers, userAnswer) {
             var answerIsCorrect = _.contains(possibleAnswers, this.cleanupUserAnswer(userAnswer));
             if(answerIsCorrect) this.model.set('_hasAtLeastOneCorrectSelection', true);
-            return answerIsCorrect;
+            return answerIsCorrect;           
         },
         
         cleanupUserAnswer: function(userAnswer) {
@@ -72,7 +72,7 @@ define(function (require) {
             }, this);
         },
         
-        markQuestion: function() {
+        markQuestion: function(comments) {
             this.forEachAnswer(function(correct, item) {
                 item.correct = correct;
             });
@@ -103,10 +103,14 @@ define(function (require) {
         storeUserAnswer: function() {
             _.each(this.model.get('_items'), function(item, index) {
                 item.userAnswer = this.$('.textinput-item-textbox').eq(index).val();
+                console.log(item.userAnswer);
             }, this);
-        }
+        },
+        
         
     });
+    
+    
     
     Adapt.register("textinput", TextInput);
     

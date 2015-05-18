@@ -271,6 +271,8 @@ define(function(require) {
                 appropriateFeedback = _.filter(this.model.get('_feedback')._threshold, function(feedbackItem) {
                     return confidenceValue >= feedbackItem._values._low && confidenceValue <= feedbackItem._values._high;
                 }, this);
+                console.log("Rating Value is");
+                console.log(confidenceValue);
 
             return appropriateFeedback[0].text;
         },

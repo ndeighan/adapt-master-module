@@ -1,55 +1,128 @@
 [
-
+    
 {  
   "_id":"c-05",
   "_parentId":"b-05",
-	"_type":"component",
-	"_component":"mcq",
-	"_classes":"",
-	"_layout":"left",
-	"_attempts":2,
-	"_questionWeight":1,
-	"_isRandom":false,
-	"_selectable":1,
-	"title": "MCQ",
-	"displayTitle": "MCQ",
-	"body": "Which of the following options would you consider to be correct?",
-	"instruction": "",
-	"_items": [
-		{
-			"text": "This is option 1.",
-			"_shouldBeSelected":true
-		},
-		{
-			"text": "This is option 2.",
-			"_shouldBeSelected":false
-		},
-		{
-			"text": "This is option 3.",
-			"_shouldBeSelected":false
-		}
-	],
+  "_type":"component",
+  "_component":"webObject",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Insert a Web Object",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_webObject": {
+            "type": "text/html",
+            "data": "course/en/embed/edgeCallToParent2/edgeCallToParent.html",
+            "width": "100%",
+            "height": "350px"
+        },
+    "_pageLevelProgress": {
+    "_isEnabled": true
+    }
+},    
+
+{  
+  "_id":"c-10",
+  "_parentId":"b-10",
+ "_type":"component",
+    "_component":"confidenceSlider",
+    "_classes":"",
+    "_layout":"full",
+    "axisLabel":  "Confidence",
+    "_scale": {
+        "labels": {
+            "low": "",
+            "high": ""
+        },
+        "_low": 1,
+        "_high": 10,
+        "_showNumberValues": "all",
+        "_snapToNumbers": true
+    },
+    "title": "Rating",
+    "displayTitle":"",
+    "body": "",
+    "_feedback": {
+        "feedbackSeparator": " ",
+        "generic": "Thanks for leaving your feedback.",
+        "_threshold": [
+            {
+                "_values": {
+                    "_low": 1,
+                    "_high": 5
+                },
+                "text": "Leave comments and let us know what we could do better."
+            },
+            {
+                "_values": {
+                    "_low": 6,
+                    "_high": 10
+                },
+                "text": "Sweet. Leave comments and let us know what we could do better."
+            }
+        ]
+    },
+    "_buttons": {
+        "submit": ""
+    },
+    "_pageLevelProgress": {
+        "_isEnabled": true
+    }    
+},
+    {  
+  "_id":"c-15",
+  "_parentId":"b-10",
+  "_type":"component",
+    "_component":"textinput",
+    "_classes":"",
+    "_layout":"full",
+    "title": "Comments",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "Leave a comment:",
+    "_attempts": 1,
+    "_questionWeight":10,
+    "placeholder": "Enter answer here",
+    "_allowsAnyCase": true,
+    "_allowsPunctuation": true,
+    "_buttons":{
+        "submit":"SUBMIT",
+        "reset":"RESET",
+        "showCorrectAnswer":"MODEL ANSWER",
+        "hideCorrectAnswer":"YOUR ANSWER"
+    },
+    "_items": [
+        {
+            "prefix": "",
+            "suffix": "",
+            "_answers": [
+                "2",
+                "two"
+            ]
+        }
+    ],
     "_feedback":{
         "correct":"Congratulations, this is the correct feedback.",
         "_incorrect": {
-            "notFinal": "Reset and Try Again!",
-            "final": "This feedback will appear if you answered question1 incorrectly."
+            "notFinal": "",
+            "final": "This feedback will appear if you answered the question incorrectly."
         },
         "_partlyCorrect": {
-            "notFinal": "Please try again!",
+            "notFinal": "",
             "final": "This feedback will appear if you answered part of the question correctly."
-      }
+        }
 	},	
 	"_feedbackgraphic":{
-        "correct":"course/en/images/correct.png",
+        "correct":"course/en/images/allison.png",
         "_incorrect": {
-            "notFinal": "course/en/images/narrative_1.png",
-            "final": "course/en/images/incorrect.png"
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
         },
         "_partlyCorrect": {
-            "notFinal": "course/en/images/narrative_2.png",
-            "final": "course/en/images/incorrect.png"
-      }
+            "notFinal": "",
+            "final": "course/en/images/allison_wrong.png"
+        }
 	},	
 	"_feedbackgraphicalt":{
         "correct":"Correct Image",
@@ -60,7 +133,7 @@
         "_partlyCorrect": {
             "notFinal": "",
             "final": "Partially Correct Image"
-      }
+        }
 	},	
 	"_feedbackgraphictitle":{
         "correct":"That's right!",
@@ -71,43 +144,61 @@
         "_partlyCorrect": {
             "notFinal": "",
             "final": "That's almost right"
-      }
+        }
 	},	
 	"_feedbackaudiosrcmp3":{
         "correct":"course/en/audio/Gold.mp3",
         "_incorrect": {
-            "notFinal": "course/en/audio/MCQ1-neg-feedback.mp3",
+            "notFinal": "",
             "final": "course/en/audio/Bronze.mp3"
         },
         "_partlyCorrect": {
-            "notFinal": "course/en/audio/MCQ2-neg-feedback.mp3",
+            "notFinal": "",
             "final": "course/en/audio/Silver.mp3"
-      }
+        }
 	},
 	"_feedbackaudiosrcogg":{
         "correct":"course/en/audio/Gold.ogg",
         "_incorrect": {
-            "notFinal": "course/en/audio/MCQ1-neg-feedback.mp3",
+            "notFinal": "",
             "final": "course/en/audio/Bronze.ogg"
         },
         "_partlyCorrect": {
-            "notFinal": "course/en/audio/MCQ2-neg-feedback.mp3",
+            "notFinal": "",
             "final": "course/en/audio/Silver.ogg"
-      }
-	},
-	"_buttons":{
-		"submit":"",
-		"reset":"",
-		"showCorrectAnswer":"",
-		"hideCorrectAnswer":""
-	},
+        }
+    },
     "_pageLevelProgress": {
         "_isEnabled": true
     }
-},
-    {  
-  "_id":"c-10",
-  "_parentId":"b-10",
+},        
+    
+{  
+  "_id":"c-20",
+  "_parentId":"b-15",
+  "_classes": "",
+  "_type":"component",
+  "_component":"webObject",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Insert a Web Object",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_webObject": {
+            "type": "text/html",
+            "data": "course/en/embed/edgeCallToParent4/edgeCallToParent.html",
+            "width": "100%",
+            "height": "350px"
+        },
+    "_pageLevelProgress": {
+    "_isEnabled": true
+    }
+}, 
+    
+{  
+  "_id":"c-25",
+  "_parentId":"b-20",
   "_type":"component",
   "_component":"webObject",
         "_classes":"",
@@ -126,52 +217,9 @@
     "_isEnabled": true
     }
 },
-    
-{  
-  "_id":"c-15",
-  "_parentId":"b-15",
-  "_type":"component",
-  "_component":"webObject",
-        "_classes":"",
-        "_layout":"full",
-        "title":"Insert a Web Object",
-        "displayTitle":"",
-        "body":"",
-        "instruction":"",
-        "_webObject": {
-            "type": "text/html",
-            "data": "course/en/embed/edgeCallToParent3/edgeCallToParent.html",
-            "width": "100%",
-            "height": "350px"
-        },
-    "_pageLevelProgress": {
-    "_isEnabled": true
-    }
-},
-    {  
-  "_id":"c-20",
-  "_parentId":"b-20",
-  "_type":"component",
-  "_component":"webObject",
-        "_classes":"",
-        "_layout":"full",
-        "title":"Insert a Web Object",
-        "displayTitle":"",
-        "body":"",
-        "instruction":"",
-        "_webObject": {
-            "type": "text/html",
-            "data": "course/en/embed/edgeCallToParent4/edgeCallToParent.html",
-            "width": "100%",
-            "height": "350px"
-        },
-    "_pageLevelProgress": {
-    "_isEnabled": true
-    }
-},
 
 { 
-  "_id":"c-25",
+  "_id":"c-30",
   "_parentId":"b-25",
   "_type":"component",
   "_component":"webObject",

@@ -307,7 +307,9 @@ define(function(require) {
 
         storeUserAnswer: function() {
             this.model.set('_userAnswer', this.getSelectedItems().value);
+//            console.log(this.getSelectedItems().value);
         }
+        
 
     });
 
