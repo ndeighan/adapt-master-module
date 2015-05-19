@@ -1,0 +1,91 @@
+.textFeedback-component {
+    .textFeedback-item {
+        background-color: @background-color;
+        padding: 0px;
+        position:relative;
+        border:0px;
+        margin-bottom:2px;
+    }
+    label{
+        background-color: transparent;
+        line-height: 32px;
+        padding: 0px;
+        float: left;
+        text-align: center;
+        cursor: default;
+        color: @item-text-color;
+    }
+    .textFeedback-item-prefix {
+        width:20%;
+    }
+    .textFeedback-item-textbox {
+        padding: 0 5px;
+        border:@item-border;
+        width: 90%;
+        float: left;
+ /*       height: 60px; */
+        &.textFeedback-validation-error { 
+            border: 2px solid @validation-error-border-color;
+        }
+    }
+    .textFeedback-item-suffix {
+        width:10%;
+    }
+    
+    .textFeedback-widget {
+        &.submitted {
+            .textFeedback-item {
+                background-color: @background-color;
+            }
+        }
+    
+        &.user {
+            .incorrect {
+                .textFeedback-incorrect-icon {
+                    display: block;
+                }
+            }
+            .correct {
+                .textFeedback-correct-icon {
+                    display: block;
+                }
+            }
+        }
+        
+        &.model {
+            .textFeedback-select-icon {
+                display: none;
+            }
+            .textFeedback-correct-icon {
+                display: block;
+            }
+        }
+    }
+
+    .textFeedback-item-state {
+        background: none;
+        position: absolute;
+        right: (@icon-size/2);
+        width: @icon-size;
+        height: @icon-size;
+        top: 50%;
+        margin-top: -(@icon-size/2);
+        z-index: 0;
+    }
+
+    .textFeedback-correct-icon {
+        color: @icon-correct-color;
+        display: none;
+    }
+
+    .textFeedback-incorrect-icon {
+        color: @icon-correct-color;
+        display: none;
+    }
+    
+    .showButton {
+        height: 60px;
+ /*       background-color: @primary-color; */
+        display: none;
+    }
+}

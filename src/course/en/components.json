@@ -25,10 +25,11 @@
 {  
   "_id":"c-10",
   "_parentId":"b-10",
+  "_FeedbackId": 0,
  "_type":"component",
     "_component":"confidenceSlider",
     "_classes":"",
-    "_layout":"full",
+    "_layout":"left",
     "axisLabel":  "Confidence",
     "_scale": {
         "labels": {
@@ -73,24 +74,25 @@
     {  
   "_id":"c-15",
   "_parentId":"b-10",
-  "_type":"component",
-    "_component":"textinput",
+     "_type":"component",
+    "_component":"textFeedback",
+	"_FeedbackId": 1,
     "_classes":"",
-    "_layout":"full",
-    "title": "Comments",
+    "_layout":"right",
+    "title": "",
     "displayTitle": "",
-    "body": "",
-    "instruction": "Leave a comment:",
+    "body": "Leave a comment.",
+    "instruction": "",
     "_attempts": 1,
     "_questionWeight":10,
-    "placeholder": "Enter answer here",
+    "placeholder": "",
     "_allowsAnyCase": true,
     "_allowsPunctuation": true,
     "_buttons":{
-        "submit":"SUBMIT",
-        "reset":"RESET",
-        "showCorrectAnswer":"MODEL ANSWER",
-        "hideCorrectAnswer":"YOUR ANSWER"
+        "submit":"",
+        "reset":"",
+        "showCorrectAnswer":"",
+        "hideCorrectAnswer":""
     },
     "_items": [
         {
@@ -103,26 +105,26 @@
         }
     ],
     "_feedback":{
-        "correct":"Congratulations, this is the correct feedback.",
+        "correct":"Thank you for your feedback.",
         "_incorrect": {
             "notFinal": "",
-            "final": "This feedback will appear if you answered the question incorrectly."
+            "final": "Thank you for your feedback"
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "This feedback will appear if you answered part of the question correctly."
-        }
+            "final": "Thank you for your feedback"
+      }
 	},	
 	"_feedbackgraphic":{
         "correct":"course/en/images/allison.png",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
+            "final": "course/en/images/allison.png"
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/images/allison_wrong.png"
-        }
+            "final": "course/en/images/allison.png"
+      }
 	},	
 	"_feedbackgraphicalt":{
         "correct":"Correct Image",
@@ -133,7 +135,7 @@
         "_partlyCorrect": {
             "notFinal": "",
             "final": "Partially Correct Image"
-        }
+      }
 	},	
 	"_feedbackgraphictitle":{
         "correct":"That's right!",
@@ -144,30 +146,30 @@
         "_partlyCorrect": {
             "notFinal": "",
             "final": "That's almost right"
-        }
+      }
 	},	
 	"_feedbackaudiosrcmp3":{
-        "correct":"course/en/audio/Gold.mp3",
+        "correct":"",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Bronze.mp3"
+            "final": ""
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Silver.mp3"
-        }
+            "final": ""
+      }
 	},
 	"_feedbackaudiosrcogg":{
-        "correct":"course/en/audio/Gold.ogg",
+        "correct":"",
         "_incorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Bronze.ogg"
+            "final": ""
         },
         "_partlyCorrect": {
             "notFinal": "",
-            "final": "course/en/audio/Silver.ogg"
-        }
-    },
+            "final": ""
+      }
+},
     "_pageLevelProgress": {
         "_isEnabled": true
     }

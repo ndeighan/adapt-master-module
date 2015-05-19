@@ -1,19 +1,19 @@
 /*
-* adapt-contrib-textInput
+* adapt-textFeedback
 * License - http://github.com/adaptlearning/adapt_framework/LICENSE
-* Maintainers - Kev Adsett <kev.adsett@gmail.com>, Daryl Hedley <darylhedley@hotmail.com>
+* Maintainers - Niall Deighan <niall.deighan@injixo.com>
 */
 
 define(function (require) {
     var QuestionView = require('coreViews/questionView');
     var Adapt = require('coreJS/adapt');
     
-    var TextInput = QuestionView.extend({
+    var TextFeedback = QuestionView.extend({
         events: {
-            "click .textinput-widget .button.submit":"onSubmitClicked",
-            "click .textinput-widget .button.reset":"onResetClicked",
-            "click .textinput-widget .button.model":"onModelAnswerClicked",
-            "click .textinput-widget .button.user":"onUserAnswerClicked",
+            "click .textFeedback-widget .button.submit":"onSubmitClicked",
+            "click .textFeedback-widget .button.reset":"onResetClicked",
+//            "click .textFeedback-widget .button.model":"onModelAnswerClicked",
+//            "click .textFeedback-widget .button.user":"onUserAnswerClicked",
             "blur input":"forceFixedPositionFakeScroll",
             "focus input":"clearValidationError"
         },
@@ -25,10 +25,10 @@ define(function (require) {
                 });
             } 
         },
-
+        
         canSubmit:function() {
             var canSubmit = true;
-            this.$(".textinput-item-textbox").each(function() {
+            this.$(".textFeedback-item-textbox").each(function() {
                 if($(this).val()=="") {
                     canSubmit = false;
                 }
@@ -41,11 +41,11 @@ define(function (require) {
         },
 
         showValidationError: function() {
-            this.$(".textinput-item-textbox").addClass("textinput-validation-error");
+            this.$(".textFeedback-item-textbox").addClass("textFeedback-validation-error");
         },
 
         clearValidationError: function() {
-            this.$(".textinput-item-textbox").removeClass("textinput-validation-error");
+            this.$(".textFeedback-item-textbox").removeClass("textFeedback-validation-error");
         },
         
         checkAnswerIsCorrect: function(possibleAnswers, userAnswer) {
@@ -67,9 +67,10 @@ define(function (require) {
         
         forEachAnswer: function(callback) {
              _.each(this.model.get('_items'), function(item, index) {
-                var userAnswer = this.$(".textinput-item-textbox").eq(index).val();
+                var userAnswer = this.$(".textFeedback-item-textbox").eq(index).val();
                 callback(this.checkAnswerIsCorrect(item._answers, userAnswer), item);
             }, this);
+			
         },
         
         markQuestion: function() {
@@ -80,18 +81,18 @@ define(function (require) {
         },
         
         onEnabledChanged: function() {
-            this.$('.textinput-item-textbox').prop('disabled', !this.model.get('_isEnabled'));
+            this.$('.textFeedback-item-textbox').prop('disabled', !this.model.get('_isEnabled'));
         },
         
         onModelAnswerShown:function () {
             _.each(this.model.get('_items'), function(item, index){
-                this.$(".textinput-item-textbox").eq(index).val(item._answers[0]);
+                this.$(".textFeedback-item-textbox").eq(index).val(item._answers[0]);
             }, this);
         },
         
         onUserAnswerShown:function () {
             _.each(this.model.get('_items'), function(item, index){
-                this.$(".textinput-item-textbox").eq(index).val(item.userAnswer);
+                this.$(".textFeedback-item-textbox").eq(index).val(item.userAnswer);
             }, this);
         },
         
@@ -102,12 +103,20 @@ define(function (require) {
         
         storeUserAnswer: function() {
             _.each(this.model.get('_items'), function(item, index) {
-                item.userAnswer = this.$('.textinput-item-textbox').eq(index).val();
+                item.userAnswer = this.$('.textFeedback-item-textbox').eq(index).val();
+				this.model.set('feedbackVal', "Feedback: " + item.userAnswer);
             }, this);
+            this.hideButton();
+        },
+        
+        hideButton: function() {
+             this.$('.buttons').hide(); 
+            this.$('.showButton').show(); 
+           
         }
         
     });
     
-    Adapt.register("textinput", TextInput);
+    Adapt.register("textFeedback", TextFeedback);
     
 });

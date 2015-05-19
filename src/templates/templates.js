@@ -1802,6 +1802,126 @@ function program1(depth0,data) {
   return buffer;
   });
 
+this["Handlebars"]["templates"]["textFeedback"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
+  var buffer = "", stack1, self=this, functionType="function", escapeExpression=this.escapeExpression;
+
+function program1(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += " disabled ";
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0._isComplete), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " ";
+  return buffer;
+  }
+function program2(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += " complete submitted user ";
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0._isCorrect), {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " ";
+  return buffer;
+  }
+function program3(depth0,data) {
+  
+  
+  return "correct";
+  }
+
+function program5(depth0,data,depth1) {
+  
+  var buffer = "", stack1;
+  buffer += "\n        <div class=\"textFeedback-item component-item  clearfix ";
+  stack1 = helpers.unless.call(depth0, (depth1 && depth1._isEnabled), {hash:{},inverse:self.noop,fn:self.program(6, program6, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\n            ";
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0.prefix), {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n            ";
+  stack1 = helpers['if'].call(depth0, (depth1 && depth1._isEnabled), {hash:{},inverse:self.program(13, program13, data),fn:self.program(11, program11, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n            ";
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0.suffix), {hash:{},inverse:self.noop,fn:self.program(15, program15, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n            <div class=\"textFeedback-item-state\">\n                <div class=\"textFeedback-icon textFeedback-correct-icon icon icon-tick\"></div>\n                <div class=\"textFeedback-icon textFeedback-incorrect-icon icon icon-tick\"></div>\n            </div>\n        </div>\n        ";
+  return buffer;
+  }
+function program6(depth0,data) {
+  
+  var stack1;
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0.correct), {hash:{},inverse:self.program(7, program7, data),fn:self.program(3, program3, data),data:data});
+  if(stack1 || stack1 === 0) { return stack1; }
+  else { return ''; }
+  }
+function program7(depth0,data) {
+  
+  
+  return "incorrect";
+  }
+
+function program9(depth0,data) {
+  
+  var buffer = "", stack1, helper;
+  buffer += "\n                <label class=\"textFeedback-item-prefix component-item-text-color\">";
+  if (helper = helpers.prefix) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.prefix); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "</label>\n            ";
+  return buffer;
+  }
+
+function program11(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n                 <textarea name=\"comments\"cols=\"35\" rows=\"4\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
+    + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" value=\"\"></textarea>\n            ";
+  return buffer;
+  }
+
+function program13(depth0,data) {
+  
+  var buffer = "", stack1, helper;
+  buffer += "\n                <textarea name=\"comments\"cols=\"35\" rows=\"4\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
+    + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" value=\"";
+  if (helper = helpers.userAnswer) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.userAnswer); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + "\"></textarea>\n            ";
+  return buffer;
+  }
+
+function program15(depth0,data) {
+  
+  var buffer = "", stack1, helper;
+  buffer += "\n                <label class=\"textFeedback-item-suffix component-item-text-color\">";
+  if (helper = helpers.suffix) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.suffix); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "</label>\n            ";
+  return buffer;
+  }
+
+  buffer += "\n<div class=\"component-inner textFeedback-inner\">\n    ";
+  stack1 = self.invokePartial(partials.component, 'component', depth0, helpers, partials, data);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n    \n    <div class=\"component-widget textFeedback-widget ";
+  stack1 = helpers.unless.call(depth0, (depth0 && depth0._isEnabled), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\n        ";
+  stack1 = helpers.each.call(depth0, (depth0 && depth0._items), {hash:{},inverse:self.noop,fn:self.programWithDepth(5, program5, data, depth0),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        \n        <div class=\"buttons\">\n            ";
+  stack1 = self.invokePartial(partials.buttons, 'buttons', depth0, helpers, partials, data);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        </div>\n        <div class=\"showButton\">\n        </div>\n    </div>\n</div>";
+  return buffer;
+  });
+
 this["Handlebars"]["templates"]["webObject"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};

@@ -1,0 +1,27 @@
+{
+  "name": "adapt-contrib-textInput",
+  "version": "1.1.3",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-textInput",
+  "authors": [
+    "Kev Adsett <kev.adsett@gmail.com"
+  ],
+  "description": "A question component that allows the learner to input text based upon a question stem.",
+  "main": "/js/adapt-contrib-textInput.js",
+  "displayName": "Text Input",
+  "component": "textinput",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "1.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.3",
+    "commit": "0fe68e81f47c8309a6c9ae8179b9ccc9b72d1f16"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-textInput.git",
+  "_target": "~1.1.3",
+  "_originalSource": "adapt-contrib-textInput",
+  "_direct": true
+}

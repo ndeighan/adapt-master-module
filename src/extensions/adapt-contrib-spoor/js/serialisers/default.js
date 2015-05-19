@@ -7,7 +7,10 @@ define(['coreJS/adapt'], function (Adapt) {
                     completion: this.serialiseSaveState('_isComplete'),
                     _isCourseComplete: Adapt.course.get('_isComplete') || false,
                     _isAssessmentPassed: Adapt.course.get('_isAssessmentPassed') || false
-                }
+                },
+				survey: {
+					response: this.serialiseFeedback('_isComplete')
+				}
           };
         },
 
@@ -45,6 +48,37 @@ define(['coreJS/adapt'], function (Adapt) {
             }, this);
 
             return data.join("");
+			
+        },
+		
+		//add section here for feedback, mimic from line 14: serialiseSaveState
+		
+		serialiseFeedback: function(attribute) {
+            if (Adapt.course.get('_latestFeedbackId') === undefined) {
+                var message = "This course is missing a latestFeedbackID.\n\nPlease run the grunt process prior to deploying this module on LMS.\n\nFeedback tracking will not work correctly until this is done.";
+                console.error(message);
+            }
+
+            // create the array to be serialised, pre-populated with dashes that represent unused tracking ids - because we'll never re-use a tracking id in the same course
+            var dataF = [];
+            var lengthF = Adapt.course.get('_latestFeedbackId') + 1;
+            for (var i = 0; i < lengthF; i++) {
+                dataF[i] = "-";
+            }
+
+            // now go through all the components, replacing the appropriate dashes with 0 (incomplete) or 1 (completed) for each of the components
+			//change this to read a fricking variable
+            _.each(Adapt.components.models, function(model, index) {
+                var _FeedbackId = model.get('_FeedbackId'),
+                    stateF = model.get('feedbackVal');
+
+                if (_FeedbackId != undefined) {
+                    dataF[_FeedbackId] = stateF;
+                }
+            }, this);
+
+            return dataF.join("");
+			
         },
 
         deserialise: function (data) {

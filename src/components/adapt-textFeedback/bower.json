@@ -1,0 +1,17 @@
+{
+  "name": "adapt-textFeedback",
+  "version": "1.1.2",
+  "homepage": "https://github.com/ndeighan/adapt-master-module",
+  "authors": [
+    "Niall Deighan <niall.deighan@injixo.com"
+  ],
+  "description": "A text input component allowing user to loeave feedback comments.",
+  "main": "/js/adapt-textFeedback.js",
+  "displayName" : "Text Feedback",
+  "component" : "textFeedback",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}
