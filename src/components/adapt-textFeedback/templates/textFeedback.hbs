@@ -9,9 +9,9 @@
                 <label class="textFeedback-item-prefix component-item-text-color">{{{prefix}}}</label>
             {{/if}}
             {{#if ../_isEnabled}}
-                 <textarea name="comments"cols="35" rows="4" maxlength="300" class="textFeedback-item-textbox" data-id="input-{{@index}}" value=""></textarea>
+                 <textarea name="comments"cols="35" rows="5" maxlength="300" class="textFeedback-item-textbox" data-id="input-{{@index}}" value=""></textarea>
             {{else}}
-                <textarea name="comments"cols="35" rows="4" maxlength="300" class="textFeedback-item-textbox" data-id="input-{{@index}}" value="{{userAnswer}}"></textarea>
+                <textarea name="comments"cols="35" rows="5" maxlength="300" class="textFeedback-item-textbox" data-id="input-{{@index}}" value="{{userAnswer}}"></textarea>
             {{/if}}
             {{#if suffix}}
                 <label class="textFeedback-item-suffix component-item-text-color">{{{suffix}}}</label>

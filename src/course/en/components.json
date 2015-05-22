@@ -26,52 +26,50 @@
   "_id":"c-10",
   "_parentId":"b-10",
   "_FeedbackId": 0,
- "_type":"component",
-    "_component":"confidenceSlider",
+    "_type":"component",
+    "_component":"slider",
     "_classes":"",
-    "_layout":"left",
-    "axisLabel":  "Confidence",
-    "_scale": {
-        "labels": {
-            "low": "",
-            "high": ""
-        },
-        "_low": 1,
-        "_high": 10,
-        "_showNumberValues": "all",
-        "_snapToNumbers": true
-    },
-    "title": "Rating",
-    "displayTitle":"",
-    "body": "",
-    "_feedback": {
-        "feedbackSeparator": " ",
-        "generic": "Thanks for leaving your feedback.",
-        "_threshold": [
-            {
-                "_values": {
-                    "_low": 1,
-                    "_high": 5
-                },
-                "text": "Leave comments and let us know what we could do better."
-            },
-            {
-                "_values": {
-                    "_low": 6,
-                    "_high": 10
-                },
-                "text": "Sweet. Leave comments and let us know what we could do better."
-            }
-        ]
+    "_layout":"right",
+    "title": "Slider type component",
+    "displayTitle":"Slider type component",
+    "body":"Question text here",
+    "instruction": "",
+    "_attempts": 2,
+    "_questionWeight":1,
+    "_showNumber": true,
+    "_showScaleIndicator": true,
+    "labelStart": "incomplete",
+    "labelEnd": "complete",
+    "_scaleStart": 1,
+    "_scaleEnd": 10,
+    "_correctAnswer": "",
+    "_correctRange": {
+        "_bottom": 4,
+        "_top": 9
     },
     "_buttons": {
-        "submit": ""
+        "submit": "",
+        "reset": "",
+        "showCorrectAnswer": "",
+        "hideCorrectAnswer": ""
+    },
+    "_feedback": {
+        "correct": "This feedback will appear if you answered the question correctly.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered the question incorrectly."
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered part of the question correctly."
+        }
     },
     "_pageLevelProgress": {
         "_isEnabled": true
-    }    
+    }
 },
-    {  
+
+{  
   "_id":"c-15",
   "_parentId":"b-10",
      "_type":"component",

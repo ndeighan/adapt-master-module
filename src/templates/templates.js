@@ -1876,7 +1876,7 @@ function program9(depth0,data) {
 function program11(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n                 <textarea name=\"comments\"cols=\"35\" rows=\"4\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
+  buffer += "\n                 <textarea name=\"comments\"cols=\"35\" rows=\"5\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
     + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" value=\"\"></textarea>\n            ";
   return buffer;
@@ -1885,7 +1885,7 @@ function program11(depth0,data) {
 function program13(depth0,data) {
   
   var buffer = "", stack1, helper;
-  buffer += "\n                <textarea name=\"comments\"cols=\"35\" rows=\"4\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
+  buffer += "\n                <textarea name=\"comments\"cols=\"35\" rows=\"5\" maxlength=\"300\" class=\"textFeedback-item-textbox\" data-id=\"input-"
     + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" value=\"";
   if (helper = helpers.userAnswer) { stack1 = helper.call(depth0, {hash:{},data:data}); }
